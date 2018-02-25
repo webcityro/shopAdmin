@@ -1,0 +1,8 @@
+{
+	"require": {
+		"php-curl-class/php-curl-class": "@dev",
+		"phpoffice/phpexcel": "1.8.*",
+		"phpoffice/phpspreadsheet": "^1.0",
+		"fzaninotto/faker": "^1.7"
+	}
+}

@@ -1,0 +1,28 @@
+.alert {
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	background: #91C1FF;
+}
+
+.alert .alertBody {
+	width: calc(100% - 35px);
+	color: inherit;
+}
+
+.alert .alertClose {
+	position: relative;
+	float: right;
+	padding: 10px;
+	top: -10px;
+	right: -10px;
+	color: inherit;
+}
+
+.alert.success {
+	background: #6aca5d;
+}
+
+.alert.error {
+	background: #FF8A8A;
+}

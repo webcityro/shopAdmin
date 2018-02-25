@@ -1,0 +1,241 @@
+#addFeedForm .formRow {
+	flex-wrap: wrap;
+}
+
+#addFeedForm #loginDetalies .formRow em {
+	display: block;
+	margin: 5px 0 0 200px;
+}
+
+#addFeedForm .formRow input[type="text"],
+#addFeedForm .formRow input[type="password"],
+#addFeedForm .formRow select,
+#addFeedForm .formRow textarea {
+	width: calc(100% - 206px);
+}
+
+#feedStructure ul {
+	list-style: none;
+}
+
+#feedStructure li .structureItemHeader {
+	display: table;
+	padding: 4px;
+	margin: 2px 0;
+	border: 1px solid #444;
+	background: #282828;
+}
+
+#feedStructure li .structureItemHeader .structureItemLabel {
+	padding: 2px;
+	color: #076678;
+}
+
+#feedStructure li .structureItemHeader .structureItemValue {
+	padding: 2px;
+	color: #458588;
+}
+
+#feedStructure li .structureItemHeader .structureItemXMLAttributes {
+	padding: 2px;
+	color: #427b58;
+}
+
+#feedStructure li .structureItemHeader .structureItemXMLAttributes .structureItemXMLAttribute {
+	color: #427b58;
+}
+
+#feedStructure li .structureItemHeader .structureItemXMLAttributes .structureItemXMLAttribute .structureItemXMLAttributeName {
+	padding: 2px;
+	color: #427b58;
+}
+
+#feedStructure li .structureItemHeader .structureItemXMLAttributes .structureItemXMLAttribute .structureItemXMLAttributeValue {
+	padding: 2px;
+	color: #689b6a;
+}
+
+#feedStructure li .structureItemHeader .structureItemExplodes .structureItemExplode {
+	color: #f00;
+}
+
+#feedStructure li .structureItemHeader .structureItemExplodes .structureItemExplodeHeader,
+#feedStructure li .structureItemHeader .structureItemExplodes .structureItemExplode .structureItemExplodeKey {
+	padding: 2px;
+	color: #9d0006;
+}
+
+#feedStructure li .structureItemHeader .structureItemExplodes .structureItemExplode .structureItemExplodeValue {
+	padding: 2px;
+	color: #cc241d;
+}
+
+#feedStructure li .structureItemHeader .structureIteField {
+	color: #d65d0e;
+}
+
+#feedStructure li .structureItemHeader .structureItemAttributeName {
+	padding: 2px;
+	color: #b57614;
+}
+
+#feedStructure li .structureItemHeader .structureItemAttributeValue {
+	padding: 2px;
+	color: #b79921;
+}
+
+#feedStructure li .structureItemHeader .structureItemImage {
+	padding: 2px;
+	color: #8f3f71;
+}
+
+#feedStructure li .structureItemHeader .structureItemIgnore {
+	padding: 2px;
+	color: #f2e5bc;
+}
+
+#feedStructure li .structureItemHeader .structureItemCategory {
+	padding: 2px;
+	color: #928374;
+}
+
+#feedStructure li .structureItemHeader .structureItemCommonField {
+	padding: 2px;
+	color: pink;
+}
+
+#feedStructure li .structureItemHeader .structureItemProductLink {
+	padding: 2px;
+	color: #00f;
+}
+
+#feedStructure li .structureItemHeader .structureItemProduct {
+	padding: 2px;
+	color: #0f0;
+}
+
+#feedStructure li .structureItemHeader .structureItemDeleteLink {
+	padding: 2px;
+	color: #f00;
+}
+
+#feedStructure li .structureItemHeader .ignore {
+	opacity: .5;
+}
+
+#feedStructure li .structureItemHeader span {
+	margin: 0 5px;
+}
+
+#feedStructureMenu, .feedStructureMenu {
+	position: absolute;
+	top: 300px;
+	left: 200px;
+	list-style: none;
+	border: 1px solid #444;
+	background: #ebf2f9;
+}
+
+#feedStructureMenu li.feedStructureMenuItem {
+	position: relative;
+	padding: 4px;
+	word-wrap: none;
+	user-select: none;
+	border-bottom: 1px solid #444;
+}
+
+#feedStructureMenu li.feedStructureMenuItem:hover {
+	background: #ccc;
+}
+
+#feedStructureMenu li.feedStructureMenuItem:last-child {
+	border-bottom: none;
+}
+
+.feedStructureMenu {
+	display: none;
+	top: 0px;
+	left: 100%;
+}
+
+#feedStructureMenu li.feedStructureMenuItem:hover .feedStructureMenu {
+	display: table;
+}
+
+#feedStructure li .structureItemHeader .structureItemXMLAttribute {}
+
+#feedStructure li ul {
+	margin: 0 0 0 20px;
+}
+
+.feedPopup {
+	position: fixed;
+	display: table;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #666;
+	box-shadow: 0px 0pc 10px rgba(0, 0, 0, .4);
+	background: #efefef;
+}
+
+.feedPopup .popupPharagraf {
+	font: 16px normal;
+}
+
+.feedPopup .popupBody {
+	padding: 10px 0 10px 0;
+}
+
+.feedPopup .popupButtons {
+	text-align: center;
+}
+
+.feedPopup .popupButtons .popupCancelButton {
+	margin-left: 10px;
+}
+
+#displayFeeds {
+	padding: 0;
+	margin: 0 auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: 1px solid #666;
+}
+
+#displayFeeds thead {
+	background: #666;
+}
+
+#displayFeeds thead tr th {
+	padding: 10px;
+	color: #fefefe;
+	border-right: 1px solid #333;
+}
+
+#displayFeeds tbody tr th:last-child {
+	border-right: none;
+}
+
+#displayFeeds tbody {
+	background: #eaeaea;
+}
+
+#displayFeeds tbody tr td {
+	padding: 10px;
+	font-size: 18px;
+	border-right: 1px solid #333;
+}
+
+#displayFeeds tbody tr td:last-child {
+	border-right: none;
+}
+
+#displayFeeds tbody tr:nth-child(even) {
+	background: #cdcdcd;
+}
+
+#cancelFeedBtn {
+	margin-left: 10px;
+}

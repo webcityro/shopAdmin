@@ -1,0 +1,127 @@
+.displayCats {
+	margin: 0 auto;
+}
+
+#addCatsForm {
+	margin: 64px auto;
+}
+
+.displayCats, .subCats,
+.displayCats #catLabelh {
+	display: table;
+	width: auto;
+	list-style: none;
+	border-radius: 15px;
+	border: 1px solid #000;
+	background: #777;
+}
+
+.displayCats #catLabel {
+	padding: 8px;
+	margin: 0px 0px 3px 0px;
+	border-bottom: 1px solid #000;
+	font: 20px bold arial;
+	color: #fff;
+	cursor: pointer;
+	background: #000;
+}
+
+.subCats {
+	margin: 0 0 0 20px;
+	border-radius: 0;
+}
+
+.displayCats li, .subCats li {
+	margin: 0px 0px 3px 0px;
+	color: #fff;
+	border-bottom: 1px solid #000;
+	font: 20px bold arial;
+}
+
+.displayCats li .catRow .catSelectID, .subCats li .catRow .catSelectID {
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.displayCats .catRow,
+.displayCats .addNewCat,
+.displayCats li.article {
+	padding: 8px;
+	background: #333;
+}
+
+.displayCats .catRow:hover,
+.displayCats .catRow.selected {
+	background: #555;
+}
+
+.displayCats .catRow .catRowImage,
+.displayCats .articleImage {
+	margin-right: 10px;
+	width: 50px;
+	vertical-align: middle;
+}
+
+.displayCats li.article {
+	font: 20px bolder;
+	font-style: italic;
+	color: #333;
+	background: #dfdfdf;
+}
+
+.displayCats li.article.tutorial:before {
+	display: inline-block;
+	margin-right: 10px;
+	content: " ";
+	border: 10px solid transparent;
+	border-right: 10px solid #333;
+	vertical-align: middle;
+}
+
+.displayCats .catName,
+.displayCats .catLinks {
+	display: inline;
+	color: #fff;
+}
+
+.displayCats .catName {
+	cursor: pointer;
+}
+
+.displayCats .catLinks,
+.displayCats .articleLinks {
+	position: relative;
+	display: inline;
+	font: 16px bold;
+}
+
+.displayCats .articleLinks {
+	color: #000;
+ }
+
+.displayCats .catLinks .deleteMenu {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	list-style: none;
+	background: #000;
+	z-index: 999;
+}
+
+.displayCats .moveCathere {
+	text-align: center;
+	cursor: pointer;
+}
+
+.displayCats .moveCathere:hover {
+	color: #333;
+	background: #ccc;
+}
+
+.show {
+	display: table;
+}
+
+.hide {
+	display: none;
+}

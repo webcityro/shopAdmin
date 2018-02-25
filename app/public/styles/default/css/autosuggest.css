@@ -1,0 +1,25 @@
+ul.astosugestResults {
+	position: absolute;
+	display: table;
+	margin: 0;
+	list-style: none;
+	border: 1px solid #333;
+	z-index: 999999;
+}
+
+ul.astosugestResults li.astosugestResult {
+	padding: 5px;
+	font: 16px bold;
+	border-bottom: 1px solid #333;
+	background: #ccc;
+}
+
+ul.astosugestResults li.astosugestResult.selected,
+ul.astosugestResults li.astosugestResult:hover {
+	color: #fff;
+	background: #333;
+}
+
+ul.astosugestResults li.astosugestResult:last-child {
+	border-bottom: none;
+}

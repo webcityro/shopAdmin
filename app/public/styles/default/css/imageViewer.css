@@ -1,0 +1,64 @@
+.displayImage {
+	position: fixed;
+	display: table;
+	padding: 20px;
+	top: calc(50% - 200px);
+	left: calc(50% - 400px);
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
+	border: 1px solid #666;
+	background: #fff;
+	z-index: 9999;
+}
+
+.displayImage .imageFrame {
+	position: relative;
+	text-align: center;
+}
+
+.displayImage .imageFrame .prevImageBtn,
+.displayImage .imageFrame .nextImageBtn {
+	position: absolute;
+	top: calc(50% - 30px);
+	font: 60px bold;
+	color: rgba(255, 255, 255, .4);
+	text-shadow: 0px 0 3px rgba(0, 0, 0, .3);
+	z-index: 2;
+}
+
+.displayImage .imageFrame .prevImageBtn:hover,
+.displayImage .imageFrame .nextImageBtn:hover {
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+.displayImage .imageFrame .prevImageBtn {
+	left: 20px;
+}
+
+.displayImage .imageFrame .nextImageBtn {
+	right: 20px;
+}
+
+/* .displayImage .imageFrame .bigImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+} */
+
+.displayImage .closeImageLink {
+	display: table;
+	padding: 5px;
+	margin-left: auto;
+	font-size: 20px;
+	color: #333;
+}
+
+.displayImage .imageLinks {
+	margin-top: 10px;
+}
+
+.displayImage .imageLinks a {
+	margin-left: 10px;
+}

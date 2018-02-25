@@ -1,0 +1,29 @@
+#displaySuppliers {
+	display: table;
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	border: 1px solid #666;
+	background: #eaeaea;
+}
+
+#displaySuppliers li {
+	padding: 10px;
+	font-size: 18px;
+}
+
+#displaySuppliers li span {
+	margin: 0 10px 0 0;
+}
+
+#displaySuppliers li span.splSite a {
+	color: #00f;
+}
+
+#displaySuppliers li:nth-child(even) {
+	background: #cdcdcd;
+}
+
+#cancelSplBtn {
+	margin-left: 10px;
+}

@@ -1,0 +1,40 @@
+#displayAliases {
+	margin: 0 auto;
+	border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+
+}
+
+#displayAliases thead {
+	background: orange;
+}
+
+#displayAliases thead th {
+	padding: 10px;
+	border-right: 1px solid #333;
+}
+#displayAliases thead th:last-child {
+	border-right: none;
+}
+
+#displayAliases #aliasesRows {
+	background: #eaeaea;
+}
+
+#displayAliases #aliasesRows .aliasRow {}
+
+#displayAliases #aliasesRows .aliasRow:nth-child(even) {
+	background: #cdcdcd;
+}
+
+#displayAliases #aliasesRows .aliasRow td {
+	padding: 10px;
+	border-right: 1px solid #333;
+}
+
+#displayAliases #aliasesRows .aliasRow td:last-child {
+	border-right: none;
+}
+
+#displayAliases #aliasesRows {}

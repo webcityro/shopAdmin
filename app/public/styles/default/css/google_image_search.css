@@ -1,0 +1,78 @@
+.imagesSearchForm {
+	position: fixed;
+	padding: 20px;
+	width: 800px;
+	min-height: 400px;
+	top: calc(50% - 200px);
+	left: calc(50% - 400px);
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
+	border: 1px solid #bbb;
+	background: #fff;
+	z-index: 9999;
+}
+
+.imagesSearchForm .closeBtn {
+	position: absolute;
+	padding: 5px;
+	font-size: 20px;
+	color: #333;
+	right: 20px;
+}
+
+.imagesSearchForm .closeBtn:hover {
+	color: #000;
+}
+
+.imagesSearchForm .searchBar {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	flex-direction: row;
+}
+
+.imagesSearchForm .searchBar .searchQuery {
+	width: 80%;
+	height: 30px;
+	font-size: 20px;
+}
+
+.imagesSearchForm .searchBar .searchBtn {
+	width: 20%;
+	height: 30px;
+}
+
+.imagesSearchForm .searchResualts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 20px 0 0 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.imagesSearchForm .searchResualts .image {
+	margin: 5px;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	background: #ccc;
+}
+
+.imagesSearchForm .searchResualts .image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.imagesSearchForm .searchResualts .image.selected {
+	background: #00a;
+}
+
+.imagesSearchForm {
+
+}

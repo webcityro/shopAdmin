@@ -1,0 +1,40 @@
+#displayAddedPrice {
+	margin: 0 auto;
+	border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+
+}
+
+#displayAddedPrice thead {
+	background: orange;
+}
+
+#displayAddedPrice thead th {
+	padding: 10px;
+	border-right: 1px solid #333;
+}
+#displayAddedPrice thead th:last-child {
+	border-right: none;
+}
+
+#displayAddedPrice #addedPriceRows {
+	background: #eaeaea;
+}
+
+#displayAddedPrice #addedPriceRows .apRow {}
+
+#displayAddedPrice #addedPriceRows .apRow:nth-child(even) {
+	background: #cdcdcd;
+}
+
+#displayAddedPrice #addedPriceRows .apRow td {
+	padding: 10px;
+	border-right: 1px solid #333;
+}
+
+#displayAddedPrice #addedPriceRows .apRow td:last-child {
+	border-right: none;
+}
+
+#displayAddedPrice #addedPriceRows {}
