@@ -1,0 +1,51 @@
+{% extends '_layout_tamplate/styles/default/app.twig' %}
+
+{% block headTitle %}{{ language.translate('login') }}{% endblock %}
+{% block headCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ config.get('url/style') }}users/css/login.css">
+{% endblock %}
+{% block headJS %}
+    <script src="{{ config.get('url/style') }}users/js/login.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row">
+			<div id="loginForm" class="panel panel-default col-md-10 col-md-offset-1">
+				<div class="panel-heading">
+					<h3 class="panel-title" id="addGroupFormTitle">{{ language.translate('login') }}</h3>
+				</div>
+				<div class="panel-body">
+					<form action="{{ path_for('users.accounts.login') }}" method="post">
+						<div id="loginErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="login">{{ language.translate('formLabelUserName') }} / {{ language.translate('formLabelEmail') }}</label>
+							<input type="text" name="login" id="login" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="password">{{ language.translate('formLabelPassword') }}</label>
+							<input type="password" name="password" id="password" class="form-control">
+							<label for="showPassword" class="form-check-label showPassword pull-right">
+								{{ language.translate('showPassword') }}
+								<input type="checkbox" id="showPassword" class="form-check-input showPassword" data-id='password'>
+							</label>
+						</div>
+						<div class="form-group">
+							<a href="{{ path_for('users.accounts.forgetPassword') }}" class="pull-right">{{ language.translate('formLoginForgetPassword') }}</a>
+						</div><br><br>
+						<div class="form-group">
+							<label for="rememberMe" class="form-check-label pull-right">
+								{{ language.translate('formLabelRememberMe') }}
+								<input type="checkbox" name="rememberMe" id="rememberMe" value="true">
+							</label>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">{{ language.translate('formLoginBtn') }}</button>
+						</div>
+						{{ csrf('users.accounts.login') | raw }}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

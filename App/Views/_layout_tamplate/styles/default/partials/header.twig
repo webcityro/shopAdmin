@@ -1,0 +1,21 @@
+<header class="navbar navbar-static-top" id="header">
+	<div class="navbar-header">
+		{% if auth.check %}
+			<a class="pill-left" id="button-menu" type="button">
+				<i class="fa fa-indent fa-lg"></i>
+			</a>
+		{% endif %}
+		<a href="{{ config.site.domain }}" class="navbar-brand">StoreMaker</a>
+	</div>
+	{% if auth.check %}
+		<ul class="nav pull-right">
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ auth.user.userName }} <span class="caret"></span></a>
+				<ul id="userDropdown" class="dropdown-menu">
+					<li><a href="{{ path_for('users.profile') }}">{{ language.translate('yourProfile') }}</a></li>
+					<li><a href="{{ path_for('users.accounts.logout') }}">{{ language.translate('logout') }}</a></li>
+				</ul>
+			</li>
+		</ul>
+	{% endif %}
+</header>

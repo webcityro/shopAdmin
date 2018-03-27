@@ -2,53 +2,53 @@
 namespace Storemaker\System\Libraries;
 
 class Language {
-	private static $language,
-						$code,
-						$directory,
-						$image,
-						$languageArray = array();
-	protected static $db;
+	private $language,
+			  $code,
+			  $directory,
+			  $image,
+			  $languageArray = [];
+	protected $container;
 
-	public static function init() {
-		self::$db = database::init();
+	public function __construct($container) {
+		$this->container = $container;
 
-		if (empty(self::$language)) {
-			$languageID = (cookie::check('languageID')) ? cookie::get('languageID') : config::get('system/languageID');
-			$lang = self::$db->select(config::get('database/prefix').'languages', '*', $languageID, '', 1);
+		if (empty($this->language)) {
+			$languageID = (isset($_COOKIE['languageID'])) ? $_COOKIE['languageID'] : $this->container->config->get('system/languageID');
 
-			if ($lang->getNumRows() == 1) {
-				$lang = $lang->results();
-				self::$language = $lang->name;
-				self::$code = $lang->code;
-				self::$directory = $lang->directory;
-				self::$image = $lang->image;
+			$lang = $this->container->db->table('languages')->where('id', $languageID)->first();
+
+			if ($lang) {
+				$this->language = $lang->name;
+				$this->code = $lang->code;
+				$this->directory = $lang->directory;
+				$this->image = $lang->image;
 			} else {
-				self::$language = 'Romana';
-				self::$code = 'RO_ro';
-				self::$directory = 'ro';
-				self::$image = 'RO_ro.png';
+				$this->language = 'Romana';
+				$this->code = 'RO_ro';
+				$this->directory = 'ro';
+				$this->image = 'RO_ro.png';
 			}
 
-			self::load('global');
+			$this->load('global');
 		}
 	}
 
-	public static function set($lang) {
+	public function set($lang) {
 		cookie::set('languageID', $lang, 365*12*24*60*60);
 	}
 
-	public static function load($file) {
-		$path = config::get('path/app').'languages/'.self::$directory.'/'.$file.'.php';
+	public function load($file) {
+		$path = $this->container->config->get('path/app').'languages/'.$this->directory.'/'.$file.'.php';
 
 		if (is_readable($path)) {
 			require_once $path;
-			self::$languageArray = array_merge(self::$languageArray, $language);
+			$this->languageArray = array_merge($this->languageArray, $language);
 		}
 	}
 
-	public static function translate($key) {
-		if (isset(self::$languageArray[$key])) {
-			$str = self::$languageArray[$key];
+	public function translate($key) {
+		if (isset($this->languageArray[$key])) {
+			$str = $this->languageArray[$key];
 			$argsNr = func_num_args();
 
 			if ($argsNr > 1) {
@@ -65,7 +65,7 @@ class Language {
 		return NULL;
 	}
 
-	public static function getJSON() {
-		return json_encode(self::$languageArray);
+	public function getJSON() {
+		return json_encode($this->languageArray);
 	}
 }

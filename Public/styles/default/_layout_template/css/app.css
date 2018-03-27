@@ -1,0 +1,280 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,vietnamese);
+
+@font-face {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 900;
+	src: url("fontawesome/webfonts/fa-solid-900.eot");
+	src: url("fontawesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		  url("fontawesome/webfonts/fa-solid-900.woff2") format("woff2"),
+		  url("fontawesome/webfonts/fa-solid-900.woff") format("woff"),
+		  url("fontawesome/webfonts/fa-solid-900.ttf") format("truetype"),
+		  url("fontawesome/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-rendering: optimizeLegibility;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+#header {
+	padding: 0;
+	margin: 0;
+	max-height: 0px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+}
+
+#header .navbar-header {
+	padding: 0;
+	max-height: 0px;
+}
+
+#button-menu {
+	display: inline-block;
+	padding: 10px 17px 9px 17px;
+	float: left;
+	color: #6D6D6D;
+	line-height: 25px;
+	cursor: pointer;
+	border-right: 1px solid #E1E1E1;
+}
+
+#header #userDropdown {
+	left: auto;
+	right: 0;
+}
+
+#header #button-menu + .navbar-brand {
+	padding: 10px 10px 10px 10px;
+	margin-right: 10px;
+	height: auto;
+}
+
+#column-left {
+	position: absolute;
+	padding-top: 50px;
+	top: 0px;
+	width: 50px;
+	height: 100%;
+	transition: all 0.3s;
+	background: #515151;
+	z-index: 10;
+}
+
+#column-left.active {
+	display: block;
+	width: 150px;
+}
+
+#menu {
+	margin-bottom: 25px;
+}
+
+#menu, #menu ul, #menu ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#menu > li {
+	position: relative;
+}
+
+#menu > li:hover {
+	background: #444;
+}
+
+#menu > li > a {
+	padding-left: 13px;
+	font-size: 14px;
+	color: #c4c4c4;
+	border-bottom: 1px solid #585858;
+}
+
+#menu > li > a:hover {
+	color: #ddd;
+}
+
+#menu li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid #515151;
+}
+
+#column-left.active #menu li i {
+	font-size: 14px;
+}
+
+#menu li a i {
+	font-size: 16px;
+}
+
+#column-left.active #menu > li > a > span {
+	display: inline;
+}
+
+#menu > li > a > span {
+	display: none;
+	margin-left: 8px;
+}
+
+#menu li ul {
+	background: #444;
+}
+
+#menu li ul a {
+	padding-left: 20px;
+}
+
+#menu li li a {
+	color: #9d9d9d;
+}
+
+#menu li li:hover {
+	background: #444;
+}
+
+#menu li li a:hover {
+	color: #ddd;
+}
+
+#menu li li a:before {
+	margin: 0 10px;
+	font-size: 14px;
+	font-family: 'FontAwesome';
+	font-weight: 900;
+	transition: margin ease 0.5s;
+	content: "\f101";
+}
+
+#column-left:not(.active) #menu > li > ul {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	width: 150px;
+	visibility: hidden;
+}
+
+#column-left:not(.active) #menu > li:hover > ul {
+	display: block;
+	visibility: unset;
+}
+
+#content {
+	padding-bottom: 40px;
+	min-height: calc(100vh - 109px);
+	transition: all 0.3s;
+}
+
+#column-left + #content {
+	margin-left: 50px;
+}
+
+#column-left + #content + #footer {
+	margin-left: 50px;
+}
+
+.page-header {
+	padding: 0;
+	margin: 15px 0;
+	vertical-align: middle;
+	border-bottom: none;
+}
+
+.page-header h1 {
+	display: inline-block;
+	margin-bottom: 15px;
+	font: 'Open Sans', sans-serif 30px 400;
+	color: #848484;
+}
+
+.breadcrumb {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+	background: none;
+}
+
+.breadcrumb > li {
+	display: inline-block;
+}
+
+.breadcrumb li a {
+	padding: 0px;
+	margin: 0px;
+	font-size: 11px;
+	color: #999999;
+}
+
+.topActions {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.container-fluid {
+	padding: 0 20px;
+}
+
+#footer {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.collapse.in {
+	display: block;
+	visibility: unset;
+}
+
+.collapse {
+	display: none;
+	visibility: unset;
+}
+
+.panel {
+	padding: 0;
+}
+
+.form-check-label.showPassword {
+	margin: -27px 10px 0 0;
+	font-size: 14px;
+}
+
+.form-check-label.showPassword input[type="checkbox"] {
+	margin: 0;
+}
+
+.displayErrors {
+	color: #a94442;
+}
+
+@media (min-width: 768px) {
+	#column-left.active {
+		overflow: auto;
+	}
+
+	#column-left.active + #content {
+		margin-left: 150px;
+	}
+
+	#column-left + #footer {
+		margin-left: 0px;
+	}
+
+	#column-left + #content + #footer {
+		margin-left: 0px;
+	}
+}

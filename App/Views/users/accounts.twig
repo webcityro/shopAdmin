@@ -1,0 +1,156 @@
+{% extends '_layout_tamplate/styles/default/app.twig' %}
+
+{% block headTitle %}{{ language.translate('pageTitle') }}{% endblock %}
+{% block headCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ config.get('url/style') }}users/css/accounts.css">
+{% endblock %}
+{% block headJS %}
+    <script src="{{ config.get('url/style') }}users/js/accounts.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="pull-right">
+				<button id="saveBtn" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save">
+					<i class="fa fa-save"></i>
+				</button>
+				<a href="#" id="cancelBtn" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Cancel">
+					<i class="fa fa-reply"></i>
+				</a>
+			</div>
+			<h1>{{ language.translate('pageTitle') }}</h1>
+			<ul class="breadcrumb">
+				<li><a href="#">{{ language.translate('users') }}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container topActions">
+			{% if auth.permissions('users/accounts', 'add') %}
+				<button id="showAddAdmin" class="btn btn-default">{{ language.translate('addAnAdmin') }}</button>
+			{% endif %}
+		</div>
+		<table id="displayUsers" class="table table-striped table-hover">
+			<thead class="therad-inverse">
+				<tr>
+					<th>{{ language.translate('idCollumn') }}</th>
+					<th>{{ language.translate('formLabelUserName') }}</th>
+					<th>{{ language.translate('formLabelFName') }}</th>
+					<th>{{ language.translate('formLabelLName') }}</th>
+					<th>{{ language.translate('formLabelEmail') }}</th>
+					<th>{{ language.translate('formLabelSex') }}</th>
+					<th>{{ language.translate('group') }}</th>
+					<th>{{ language.translate('lastLoginDate') }}</th>
+					<th>{{ language.translate('lastLogoutDate') }}</th>
+					<th>{{ language.translate('actionCollumn') }}</th>
+					</tr>
+				</thead>
+			<tbody>
+				{% for user in usersList %}
+					<tr data-id="{{ user.id }}">
+						<th scope="row">{{ user.id }}</th>
+						<td>
+							{% if auth.permissions('users/profile', 'view') and (auth.isOwner(user.id) == false or auth.isOwner()) %}
+								<a href="{{ path_for('users.profile', {user: user.userName})}}">{{ user.userName }}</a>
+							{% else %}
+							    {{ user.userName }}
+							{% endif %}
+						</td>
+						<td>{{ user.fName }}</td>
+						<td>{{ user.lName }}</td>
+						<td>{{ user.email }}</td>
+						<td>{{ language.translate('formLabelSex'~(user.sex | upper)) }}</td>
+						<td>{{ (auth.isOwner(user.id)) ? language.translate('owner') : user.group.name }}</td>
+						<td>{{ user.lastLoginDate | date('d m Y - H : i') }}</td>
+						<td>{{ user.lastLogOutDate | date('d m Y - H : i') }}</td>
+						<td>
+							{% if auth.isOwner() or auth.group().level <= user.group.level %}
+								{% if (auth.isOwner(user.id) == false and auth.permissions('users/accounts', 'edit')) or auth.isOwner() %}
+									<a href="#" class="editUser">{{ language.translate('edit') }}</a>
+								{% endif %}
+								{% if auth.isOwner(user.id) == false %}
+									{% if auth.permissions('users/accounts', 'delete') and user.id != auth.user.id %}
+										/ <a href="#" class="deleteUser">{{ language.translate('delete') }}</a>
+									{% endif %}
+								{% endif %}
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		<div class="row">
+			<div class="col-md-12 col-sd-12 col-xs-12 text-center" id="paginationWrapper">
+				{{ paginate(usersList) | raw }}
+			</div>
+		</div>
+		{% if auth.permissions('users/accounts', 'add') or auth.permissions('users/accounts', 'edit') %}
+			<div class="row">
+				<div id="addAdminForm" class="panel panel-default col-md-10 col-md-offset-1">
+					<div class="panel-heading">
+						<h3 class="panel-title" id="usersFormTitle">{{ language.translate('addAdmin') }}</h3>
+					</div>
+					<div class="panel-body">
+						<div id="addUserErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="fName">{{ language.translate('formLabelFName') }}:</label>
+							<input type="text" name="fName" id="fName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="lName">{{ language.translate('formLabelLName') }}:</label>
+							<input type="text" name="lName" id="lName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="userName">{{ language.translate('formLabelUserName') }}:</label>
+							<input type="text" id="userName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="password">{{ language.translate('formLabelPassword') }}:</label>
+							<input type="password" id="password" class="form-control" autocomplete="new-password">
+							<label for="showPassword" class="form-check-label showPassword pull-right">
+								{{ language.translate('showPassword') }}
+								<input type="checkbox" id="showPassword" class="form-check-input showPassword" data-id='password'>
+							</label>
+						</div>
+						<div class="form-group">
+							<label>{{ language.translate('formLabelSex') }}:</label>
+							<div id="sex" style="display:table-cell; width: 100%;">
+								<label for="sexM" class="form-check-label">
+									<input type="radio" name="sex" id="sexM" class="sex form-check-input" value="m">
+									{{ language.translate('formLabelSexM') }}
+								</label>
+
+								<label for="sexF" class="form-check-label">
+									<input type="radio" name="sex" id="sexF" class="sex form-check-input" value="f">
+									{{ language.translate('formLabelSexF') }}
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email">{{ language.translate('formLabelEmail') }}:</label>
+							<input type="text" name="email" id="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="groupID">{{ language.translate('userGroups') }}:</label>
+							<select id="groupID" class="form-control">
+								{% for group in groupsList %}
+								    <option value="{{ group.id }}">{{ group.name }}</option>
+								{% endfor %}
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="status">{{ language.translate('status') }}:</label>
+							<select id="status" class="form-control">
+								<option value="1">{{ language.translate('enable') }}</option>
+								<option value="0">{{ language.translate('disable') }}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+	{{ csrf('users.accounts') | raw }}
+{% endblock %}

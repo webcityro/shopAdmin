@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ config.get('site/name') }} - {% block title %}{% endblock %}</title>
+
+		<style>
+			a:link, a:active, a:visited, a:hover {
+				color: #336ab7;
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			header#header {
+				padding: 10px 15px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+
+			header#header h1 {
+				display: inline-block;
+				font: 20px arial bolder;
+			}
+
+			header#header h2 {
+				display: inline-block;
+				font: 16px arial normal;
+			}
+
+			main#content {
+				padding: 20px;
+				color: #333;
+			}
+
+			footer#footer {
+				padding: 10px;
+				text-align: center;
+				border-top: 1px solid #e5e5e5;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<a href="{{ config.get('site/domain') }}"><h1>{{ config.get('site/name') }}</h1></a>
+			- <h2>{% block headerTitle %}{% endblock %}</h2>
+		</header>
+		<main id="content">{% block content %}{% endblock %}</main>
+		<footer id="footer">
+			<a href="{{ config.get('site/domain') }}">{{ config.get('site/name') }}</a>
+			&copy; 2018 {% if 'now'|date('Y') > 2018 %} - {{ 'now'|date('y') }} {% endif %} All rights reserved.<br>
+			Version 1.0
+		</footer>
+	</body>
+</html>

@@ -4,13 +4,16 @@ $language = array();
 
 $language['or'] = 'sau';
 $language['hi'] = 'Buna';
+$language['ok'] = 'Bine';
+$language['yes'] = 'Da';
+$language['no'] = 'Nu';
 $language['all'] = 'Toate';
 $language['yourProfile'] = 'Profilu tau';
 $language['clickHire'] = 'Click aici';
 $language['tnx'] = 'Iti multumim!';
 $language['congratulations'] = 'Felicitari...!';
 $language['ops'] = 'Ops...!';
-$language['ourTeam'] = 'Echipa '.Storemaker\System\Libraries\Config::get('site/name').'.';
+$language['ourTeam'] = 'Echipa '.$this->container->config->get('site/name').'.';
 $language['userNotFond'] = 'Nu s-a gasit utilizatorul!';
 $language['NrOfComments'] = 'Ai {s1} comentarii';
 $language['seying'] = 'spune';
@@ -35,6 +38,15 @@ $language['save'] = 'Salveaza';
 $language['status'] = 'Status';
 $language['now'] = 'Acum';
 $language['never'] = 'Nociodata';
+$language['accounts'] = 'Conturi';
+$language['showPassword'] = 'Vezi parola';
+$language['group'] = 'Grup';
+$language['close'] = 'Inchide';
+$language['warning'] = 'Atentie';
+$language['clickHere'] = 'click aici';
+$language['level'] = 'Nivel';
+$language['minLevel'] = 'Nivel minim';
+$language['min'] = 'Minim';
 
 $language['sexm'] = 'Masculin';
 $language['sexf'] = 'Feminin';
@@ -83,10 +95,17 @@ $language['resultsNotFond'] = 'Nu s-a gasit {s1} dorit(a)!';
 $language['idCollumn'] = 'ID';
 $language['actionCollumn'] = 'Actiuni';
 $language['users'] = 'Utilizatori';
+$language['groups'] = 'Grupuri';
 $language['categories'] = 'categorii';
 $language['attributes'] = 'Atribute';
+$language['groupsAttributes'] = 'Grupuri atribute';
+$language['templates'] = 'Sabloane';
 $language['products'] = 'Produse';
+$language['productsFromFeeds'] = 'Produse din feed';
+$language['addedPrice'] = 'Adauos preturi';
 $language['suppliers'] = 'Furnizori';
+$language['feeds'] = 'Feed-uri';
+$language['system'] = 'Sistem';
 $language['aliases'] = 'Alias-uri';
 $language['errors'] = 'Errori';
 
@@ -119,40 +138,17 @@ $language['formLabelChoseCountry'] = 'Alege tara';
 $language['formLabelAgree'] = 'Sunt de acord cu {s1} inpuse de voi!';
 $language['singUpBtn'] = 'Inscrie-te acum!';
 
+$language['login'] = 'Logare';
+$language['logout'] = 'Delogare';
+$language['loginRequired'] = 'Trebuie sa te loghezi inainte sa accesezi aceasta sectiune!';
+$language['logoutRequired'] = 'Daca esti deja logat nu ai de ce sa accesezi acea sectiune!';
+$language['userAccessDenied'] = 'Nu ai drept de acces in aceasta sectiune!';
+$language['dontHavePermissionForAction'] = 'Nu ai drepturile necesare pentru a executa aceasta actiune!';
+
 $language['formLabelRememberMe'] = 'Tine-ma minte';
 $language['formLoginBtn'] = 'Logheaza-te!';
 $language['formLoginNewAccount'] = 'Cont nou';
 $language['formLoginForgetPassword'] = 'Ti-ai uitat parola?';
-
-$language['retesPasswordPageTitle'] = 'Reseteaza-ti parola!';
-$language['retesPasswordFormTitle'] = 'introdu parola';
-$language['retesPasswordBtn'] = 'Reseteaza parola';
-$language['forgetMyPassword'] = 'Mi-am uitat parola!';
-$language['forgetPasswordBtn'] = 'Recupereaza-ti parola!';
-$language['wrtongEmail'] = 'Aceasta adresa de email nu exista!';
-$language['forgetPasswordEmailSubject'] = 'Resetare parola!';
-$language['forgetPasswordEmailPharagraf1'] = 'Ai solicitat resetarea parolei.';
-$language['forgetPasswordEmailPharagraf2'] = 'Pentru ati putea reseta parola te rugam sa dai';
-$language['forgetPasswordEmailPharagraf3'] = 'Daca nu ai fost tu cel care a solicitat resetarea parolei poti ignora acest email.';
-$language['emailNotSend'] = 'Email-ul n-a putut fi trimis momentan, te rugam sa incerci mai tarziu. Iti multumim pentru intelegere!';
-$language['forgetPasswordEmailSend'] = 'Email-ul continand link-ul de resetare a parolei a fost trimis la adresa {s1}.<br>Te rugam sa accesezi acel link pentru ati putea reseta parola.';
-$language['retesPasswordInvalidLink'] = 'Ops... Accest link este invalid. Este posibil sa-l fi folosit deja. Va rugam sa reloati operatiunea de la inceput. Va multumim pentru intelegere!';
-$language['changePasswordSuccess'] = 'Parola a fost schimbata cu succes!';
-$language['changePasswordFaild'] = 'Parola n-a putut fi schimbata momentan, te rugam sa incerci mai tarziu!';
-
-$language['errorNoInput'] = 'Nu ai introdus numele de utilizator sau parola!';
-$language['errorWrongUserName'] = 'Numele de utilizator <strong>{s1}</strong> nu exista!';
-$language['errorWrongPassword'] = 'Parola este incorecta!';
-$language['errorAccountDisabledForever'] = 'Contul tau a fost dezactivat pe termen nelimitat!';
-$language['errorAccountDisabled'] = 'Contul tau a fost dezactivat pana la data de
-							<strong>{s1}</strong><br />pentru detalii te rugam sa-ti
-							verifici adresa de email <strong>{s2}</strong>.
-							<br />Iti multumim pentru intelegere!';
-$language['errorAccountNotActivated'] = 'Contul tau n-a fost activat inca,<br />
-							te rugam sa-l activezi folosind link-ul de activare din
-							email-ul pe care l-ai primit la inscriere pe adresa de email
-							<strong>{s1}</strong>.<br />
-							Iti multumim pentru intelegere!';
 
 
 $language['validateRequired'] = '{s1} este obligatoriu!';
@@ -174,3 +170,5 @@ $language['validateAllFieldsRequired'] = 'Toate campurile sunt obligatorii!';
 $language['validateFieldsRequired'] = 'Campurile marcate cu (*) sunt obligatorii!';
 $language['validateunderAge'] = 'Trebuie sa ai {s1} ani inpliniti!';
 $language['validateNotAgree'] = 'Nu ai acceptat termenele si conditile impuse de noi!';
+$language['validateEmailAvailable'] = 'Adresa de email exista deja.';
+$language['validateUserNameAvailable'] = 'Numele de utilizator exista deja.';

@@ -1,13 +1,11 @@
 <?php
-
-error_reporting(E_ALL);
 //ob_start();
 
 $config = array(
 		'site' => [
-			'name'   => 'Proline',
+			'name'   => 'StoreMaker',
 			'style'  => 'default',
-			'domain' => 'http://localhost/proline/new_admin/Public/'
+			'domain' => 'http://storemaker.local/'
 		]);
 $config['url']['temp']			 = $config['site']['domain'].'file_storage/temp/';
 $config['url']['style']			 = $config['site']['domain'].'styles/'.$config['site']['style'].'/';
@@ -30,25 +28,35 @@ $config['path']['temp']	 	  		  = $config['path']['app'].'Temp/';
 $config['database'] = [
 			'driver'   => 'mysql',
 			'host'	   => 'localhost',
-			'user'	   => 'root',
+			'database'	   => 'storemaker',
+			'username'	   => 'root',
 			'password' => '',
-			'name'	   => 'proline',
-			'prefix'	   => 'wc_'
+			'charset'  => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'	   => 'sm_'
 		];
 $config['icon'] = [
 			'error' => $config['url']['style'].'images/error_icon.png',
 			'ok' => $config['url']['style'].'images/ok_icon.png',
 			'loader' => $config['url']['style'].'images/loader_icon.png'
 		];
-$config['ownerID'] = 1;
+$config['system'] = [
+	'ownerID' => 1,
+	'environment' => 'development'
+];
 
-require_once '../vendor/autoload.php';
+$config['email'] = [
+	'smtp' => [
+		'auth' => true,
+		'debug' => ($config['system']['environment'] == 'development') ? 2 : 0,
+		'host' => 'smtp.gmail.com',
+		'username' => 'andreivalcu@gmail.com',
+		'password' => 'echo "alexandralove";',
+		'securety' => 'tls',
+		'port' => 587
+	]
+];
 
-$app = new Storemaker\System\Core\Router();
+require_once '../System/Core/App.php';
 
-require_once '../App/Routes.php';
-
-
-Storemaker\System\Libraries\Config::setInitial($config);
-
-$app->boot();
+$app->run();

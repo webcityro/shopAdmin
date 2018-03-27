@@ -1,0 +1,137 @@
+{% extends '_layout_tamplate/styles/default/app.twig' %}
+
+{% block headTitle %}{{ language.translate('pageTitle') }}{% endblock %}
+{% block headCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ config.get('url/style') }}users/css/groups.css">
+{% endblock %}
+{% block headJS %}
+    <script src="{{ config.get('url/style') }}users/js/groups.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="pull-right">
+				<button id="saveBtn" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save">
+					<i class="fa fa-save"></i>
+				</button>
+				<a href="#" id="cancelBtn" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Cancel">
+					<i class="fa fa-reply"></i>
+				</a>
+			</div>
+			<h1>{{ language.translate('pageTitle') }}</h1>
+			<ul class="breadcrumb">
+				<li><a href="{{ path_for('users.accounts') }}">{{ language.translate('users') }}</a></li> /
+				<li>{{ language.translate('groups') }}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container topActions">
+			{% if auth.permissions('users/groups', 'add') %}
+				<button id="showAddGroupBtn" class="btn btn-default">{{ language.translate('addGroup') }}</button>
+			{% endif %}
+		</div>
+
+		<table id="displayUserGroups" class="table table-striped table-hover">
+			<thead class="therad-inverse">
+				<tr>
+					<th>{{ language.translate('idCollumn') }}</th>
+					<th>{{ language.translate('formLabelFName') }}</th>
+					<th>{{ language.translate('level') }}</th>
+					<th>{{ language.translate('numberOfUsers') }}</th>
+					<th>{{ language.translate('actionCollumn') }}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% if (groupsRows) %}
+					{% for group in groupsRows %}
+						<tr data-id="{{ group.id }}" data-level="{{ group.level }}" data-users-count="{{ group.users.count() }}">
+							<th>{{ group.id }}</th>
+							<td>{{ group.name }}</td>
+							<td>{{ group.level }}</td>
+							<td>{{ group.users.count() }}</td>
+							<td>
+								{% if auth.user().groupID != group.id and group.level >= auth.group.level %}
+									{% if auth.permissions('users/groups', 'edit') %}
+										<a href="#" class="editGroup">{{ language.translate('edit') }}</a>
+									{% endif %}
+									{% if auth.permissions('users/groups', 'delete') %}
+										/ <a href="#" class="deleteGroup">{{ language.translate('delete') }}</a>
+									{% endif %}
+								{% endif %}
+							</td>
+						</tr>
+					{% endfor %}
+				{% else %}
+					<tr class="noGroups"><td colspan="3" class="text-center">{{ language.translate('noGroupsAdded') }}</td></tr>
+				{% endif %}
+			</tbody>
+		</table>
+		<div class="row">
+			<div class="col-md-12 col-sd-12 col-xs-12 text-center" id="paginationWrapper">
+				{{ paginate(groupsRows) | raw }}
+			</div>
+		</div>
+
+		{% if auth.permissions('users/groups', 'add') or auth.permissions('users/groups', 'edit') %}
+			<div class="row">
+				<div id="addGroupForm" class="panel panel-default col-md-10 col-md-offset-1">
+					<div class="panel-heading">
+						<h3 class="panel-title" id="addGroupFormTitle">{{ language.translate('addGroup') }}</h3>
+					</div>
+					<div class="panel-body">
+						<div id="addUserGroupErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="groupName">{{ language.translate('formLabelFName') }}:</label>
+							<input type="text" id="groupName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="groupLevel">{{ language.translate('level') }} ({{ language.translate('min') }} {{ auth.group.level == 0 ? 1 : auth.group.level }})</label>
+							<input type="number" id="groupLevel" class="form-control" min="{{ auth.group.level == 0 ? 1 : auth.group.level }}" value="{{ auth.group.level == 0 ? 1 : auth.group.level }}">
+						</div>
+						<fieldset id="sectionPermitions" class="form-horizontal">
+							<legend>{{ language.translate('groupPermissions') }}</legend>
+							{% set x = -1 %}
+							{% for sectionKey, section in siteSections %}
+							    {% set x = x + 1 %}
+								<div class="form-group">
+									<label>{{ section.label }}</label>
+									<ul class="list-inline permissions" data-section="{{ sectionKey }}">
+										{% set all = true %}
+										{% for key, action in section.actions %}
+											{% if action.value == false %}
+												{% set all = false %}
+											{% endif %}
+										{% endfor %}
+										<li>
+											<label for="all_{{ x }}">
+												{{ language.translate('all') }}
+												<input type="checkbox" id="all_{{ x }}" class="groupPermission" value="all"{% if all %} checked="checked" {% endif %}>
+											</label>
+										</li>
+
+										{% for key, action in section.actions %}
+											<li>
+												<label for="{{ key~'_'~x }}" class="form-check-label">
+													{{ action.label }}
+													<input type="checkbox" id="{{ key~'_'~x }}" class="groupPermission form-check-input" value="{{ key }}"{% if action.value %} checked="checked" {% endif %}{% if auth.permissions(sectionKey, key) == false %} disabled="disabled" {% endif %}>
+												</label>
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+							{% endfor %}
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{{ csrf('users.groups') | raw }}
+	</div>
+{% endblock %}
+{% block bodyEndJS %}
+    <script>
+		var sections = {{ siteSections | json_encode | raw }};
+	</script>
+{% endblock %}

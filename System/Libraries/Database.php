@@ -17,7 +17,7 @@ class Database {
 
 	private function __construct() {
 		try {
-			$this->pdo = new \PDO(Config::get('database/driver').':host='.Config::get('database/host').';dbname='.Config::get('database/name'), Config::get('database/user'), Config::get('database/password'));
+			$this->pdo = new \PDO(Config::get('database/driver').':host='.Config::get('database/host').';dbname='.Config::get('database/database'), Config::get('database/username'), Config::get('database/password'));
 		} catch (\PDOException $e) {
 			die('Nu se poate conecta la baza de date!<br>'.$e->getMessage());
 		}

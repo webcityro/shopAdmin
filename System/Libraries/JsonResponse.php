@@ -4,6 +4,7 @@ namespace Storemaker\System\Libraries;
 class JsonResponse {
 	private $status = true,
 			  $errors = [],
+			  $tokens = [],
 			  $data = [];
 
 	public function setStatus($status) {
@@ -12,6 +13,10 @@ class JsonResponse {
 
 	public function setData($key, $data) {
 		$this->data[$key] = $data;
+	}
+
+	public function setToken($key, $token) {
+		$this->tokens[$key] = $token;
 	}
 
 	public function setError($value, $key = false) {
@@ -26,8 +31,17 @@ class JsonResponse {
 		$this->errors[$key ?: count($this->errors)]  = $value;
 	}
 
+	public function getData() {
+		return [
+			'status' => $this->status,
+			'errors' => $this->errors,
+			'data' => $this->data,
+			'token' => $this->tokens
+		];
+	}
+
 	public function getResponse($die = true) {
-		$data = json_encode(['status' => $this->status, 'errors' => $this->errors, 'data' => $this->data]);
+		$data = json_encode($this->getData());
 		if ($die) {
 			die($data);
 		}

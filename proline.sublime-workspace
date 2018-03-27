@@ -1,0 +1,1373 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m",
+				"$methodArr〔variable〕"
+			],
+			[
+				"cb",
+				"$cbArr〔variable〕"
+			],
+			[
+				"ro",
+				"route"
+			],
+			[
+				"f",
+				"foreach\tforeach …"
+			],
+			[
+				"th",
+				"$this〔variable〕"
+			],
+			[
+				"t",
+				"$this〔variable〕"
+			],
+			[
+				"strp",
+				"strpos〔function〕"
+			],
+			[
+				"re",
+				"req1\trequire_once …"
+			],
+			[
+				"strt",
+				"strtolower〔function〕"
+			],
+			[
+				"_",
+				"$_SERVER〔variable〕"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"S",
+				"Storemaker"
+			],
+			[
+				"r",
+				"req1\trequire_once …"
+			],
+			[
+				"gr",
+				"groupID"
+			],
+			[
+				"ug",
+				"userGroupRow"
+			],
+			[
+				"user",
+				"userGroups"
+			],
+			[
+				"gmo",
+				"groupsModel"
+			],
+			[
+				"per",
+				"perPaga"
+			],
+			[
+				"do",
+				"domain"
+			],
+			[
+				"un",
+				"userName"
+			],
+			[
+				"uti",
+				"Utilizatorul"
+			],
+			[
+				"ed",
+				"editUser"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"w",
+				"where"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"uid",
+				"userID"
+			],
+			[
+				"va",
+				"validateArr"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"fn",
+				"fName"
+			],
+			[
+				"us",
+				"userTR"
+			],
+			[
+				"u",
+				"userName"
+			],
+			[
+				"ch",
+				"children\t.children()"
+			],
+			[
+				"du",
+				"displayUsers"
+			],
+			[
+				"ll",
+				"lastLoginDateTD"
+			],
+			[
+				"ln",
+				"lNameTD"
+			],
+			[
+				"newt",
+				"newTR"
+			],
+			[
+				"etd",
+				"emailTD"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"lli",
+				"lastLogInDate"
+			],
+			[
+				"sud",
+				"singUpDate"
+			],
+			[
+				"st",
+				"singupToken"
+			],
+			[
+				"sli",
+				"slideUp\t.slideUp()"
+			],
+			[
+				"acl",
+				"alertCloseLink"
+			],
+			[
+				"alerc",
+				"alertCloseLink"
+			],
+			[
+				"ac",
+				"addClass\t.addClass()"
+			],
+			[
+				"si",
+				"siblings\t.siblings()"
+			],
+			[
+				"tr",
+				"thisTR"
+			],
+			[
+				"new",
+				"newToken"
+			],
+			[
+				"v",
+				"val\t.val()"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"con",
+				"confirm"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"wsn",
+				"whs-nw\twhite-space: nowrap;"
+			],
+			[
+				"all",
+				"allCheckbox"
+			],
+			[
+				"sa",
+				"showAddGroupBtn"
+			],
+			[
+				"tc",
+				"thisCheckboxes"
+			],
+			[
+				"this",
+				"thisCheckbox"
+			],
+			[
+				"ck",
+				"checkAll"
+			],
+			[
+				"agf",
+				"addGroupForm"
+			],
+			[
+				"agfr",
+				"addGroupFormTitle"
+			],
+			[
+				"g",
+				"get\t$.get()"
+			],
+			[
+				"l",
+				"language"
+			],
+			[
+				"ca",
+				"cancelAddGroup"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"ag",
+				"addGroupForm"
+			],
+			[
+				"rem",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"da",
+				"defaultAddGroupBtnText"
+			],
+			[
+				"fe",
+				"fieldErrorClass"
+			],
+			[
+				"di",
+				"displayErrors"
+			],
+			[
+				"id",
+				"idTD"
+			],
+			[
+				"nam",
+				"nameTD"
+			],
+			[
+				"system",
+				"systemError"
+			],
+			[
+				"edi",
+				"editID"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"j",
+				"json_decode"
+			],
+			[
+				"p",
+				"permissions"
+			],
+			[
+				"vpe",
+				"validatePermitions"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"val",
+				"val\t.val()"
+			],
+			[
+				"add",
+				"addGroupToken"
+			],
+			[
+				"vali",
+				"validateGroupName"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"ad",
+				"addOrUpdate"
+			],
+			[
+				"sect",
+				"siteSections"
+			],
+			[
+				"gru",
+				"Grupuri"
+			],
+			[
+				"form",
+				"formLabelFName"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"lis",
+				"lisi\tlist-style-image"
+			],
+			[
+				"bin",
+				"bgi-n\tbackground-image: none;"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"prop",
+				"prop\t.prop() - single"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"ut",
+				"userTable"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"set",
+				"setContainer"
+			],
+			[
+				"err",
+				"errorTR"
+			],
+			[
+				"td",
+				"errorTD"
+			],
+			[
+				"cli",
+				"cancelLink"
+			],
+			[
+				"h",
+				"html\t.html()"
+			],
+			[
+				"updateSex_",
+				"updateSexM_"
+			],
+			[
+				"labe",
+				"labelM"
+			],
+			[
+				"up",
+				"updateSex"
+			],
+			[
+				"pa",
+				"password2"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"sexF",
+				"formLabelSexF"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"fi",
+				"fieldID"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"use",
+				"userID"
+			],
+			[
+				"delete",
+				"deleteUser"
+			],
+			[
+				"er",
+				"errorTR"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"e",
+				"errorsContainer"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"Acti",
+				"activat"
+			],
+			[
+				"dir",
+				"directory"
+			],
+			[
+				"lang",
+				"language"
+			],
+			[
+				"sto",
+				"storesTable"
+			],
+			[
+				"stabl",
+				"storesTable"
+			],
+			[
+				"sett",
+				"settings"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"k",
+				"k"
+			],
+			[
+				"cona",
+				"configArray"
+			],
+			[
+				"carr",
+				"configArray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "new_admin/System/Libraries/Controller.php",
+			"settings":
+			{
+				"buffer_size": 1044,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new_admin/System/Libraries/Model.php",
+			"settings":
+			{
+				"buffer_size": 316,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new_admin/System/Libraries/Pagination.php",
+			"settings":
+			{
+				"buffer_size": 2383,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new_admin/System/Libraries/View.php",
+			"settings":
+			{
+				"buffer_size": 3536,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new_admin/System/Core/Core.php",
+			"settings":
+			{
+				"buffer_size": 714,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "new_admin/System/Core/Router.php",
+			"settings":
+			{
+				"buffer_size": 1161,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "new_admin/App/Routes.php",
+			"settings":
+			{
+				"buffer_size": 213,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "new_admin/index.php",
+			"settings":
+			{
+				"buffer_size": 2133,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "i",
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"d",
+				"Package Control: Discover Packages"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagei",
+				"Package Control: Install Package"
+			],
+			[
+				"H",
+				"HTMLBeautify"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 538.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Andy/Google_Drive/wamp/www/proline",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/system"
+	],
+	"file_history":
+	[
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Home.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Home.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/composer.json",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Validate.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Url.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Upload.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Token.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Session.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Language.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/JsonResponse.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Input.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Image.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Hash.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/File.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Errors.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Email.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Dir.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Date.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/database.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Bootstrap.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Cookie.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Libraries/Config.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Controllers/SystemError.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/System/Controllers/Error404.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Suppliers/Suppliers.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Feeds/Cron.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Feeds/Feeds.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Products/AddedPrice.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Products/Products.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Attributes/Templates.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Attributes",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users/Users.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users/Logout.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users/Login.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Suppliers/Feeds/Products.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Suppliers/Feeds/Feeds.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Suppliers/Feeds/Cron.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Suppliers/Suppliers.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Feeds/Products.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Products/AddedPrice.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Suppliers.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Stores.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Settings.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Attributes/Templates.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/Users.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Feeds/Cron.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Feeds/Feeds.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Index.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/Logout.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/Login.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/ForgetPassword.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Feeds.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Errors.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Categories.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Aliases.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Ajax.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/AddedPrice.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/Profile.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Models/Users/Groups.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/ParseXML.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/parser.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/ParseJSON.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/ParseExplode.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/parseExcel.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Feeds/Parsers/parseCSV.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/feeds/logins/loginURL.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/feeds/logins/LoginSoap.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/feeds/logins/LoginNOD.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/feeds/logins/LoginCURL.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/User.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/DownloadImage.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Libraries/Categories.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/index.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Suppliers.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Templates.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Products.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Logout.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Login.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Feeds.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Index.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Errors.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Categories.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Aliases.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/AddedPrice.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Ajax.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users/Groups.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Controllers/Users/Profile.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Contracts/feeds/Parser.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/App/Contracts/feeds/Login.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/controlers/users.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/core.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/libs/composer.json",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/models/usersModel.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/languages/ro/users.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/languages/ro/userGroups.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/languages/ro/global.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/index.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/styles/default/css/users.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/js/users.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/controlers/users/groups.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/models/users/groupsModel.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/groups.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/styles/default/css/groups.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/users/js/groups.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/.gitignore",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/validate.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/tamplate/styles/default/navbar.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/js/init.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/styles/default/css/alerts.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/styles/default/css/main.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/styles/default/css/table_style.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/js/error_handle.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/libs/userObj.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/models/storesModel.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/database.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/models/settingsModel.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/styles/default/css/form.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/jsonResponse.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/bootstrap.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/controlers/systemError.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/errors.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/controlers/error.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/mainControler.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/controlers/users/profile.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/views/tamplate/styles/default/header_overall.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/app/public/styles/default/css/error_handle.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/proline/new_admin/system/libs/language.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+			"C:\\Users\\Andy\\Google_Drive\\wamp\\www\\proline\\new_admin",
+			"C:\\Users\\Andy\\Dropbox\\wamp\\www\\proline\\new_admin",
+			"C:\\Users\\Andy\\Dropbox\\wamp\\www\\proline\\development\\feeds\\inc\\nod",
+			"<open files>",
+			"",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cbArr",
+			"controller",
+			"home",
+			"echo",
+			"method",
+			"App",
+			"get",
+			"delete",
+			"static",
+			"App",
+			"indexModel",
+			"feedsModel",
+			"errorHandleModel",
+			"ajaxModel",
+			"namespace",
+			"userModel",
+			"Logins",
+			"Libraries",
+			"namespace",
+			"System",
+			"Controllers",
+			"Libraries",
+			"System",
+			"Controllers",
+			"sabloane",
+			"Users",
+			"Feeds",
+			"namespace",
+			"user",
+			"groupID",
+			"status",
+			"active",
+			"status",
+			"id",
+			"addAdmin",
+			"userGroups",
+			"status",
+			"askCancelOneUserEditToStartEditingAnotherUser",
+			"disableUserMessage",
+			"var",
+			"delete",
+			"email",
+			"sex",
+			"email",
+			"lName",
+			"isUpdate",
+			"array",
+			"lName",
+			"userName",
+			"editLink",
+			"editUser",
+			"edit",
+			"Acum",
+			"Status",
+			"status",
+			"acum",
+			"now",
+			"singupDateTD",
+			"emailTD",
+			"lNameTD",
+			"lName",
+			"userName",
+			"newToken",
+			"email",
+			"deleteUser",
+			"delete",
+			"save",
+			"status ",
+			"canNotDelete",
+			"class",
+			"lastLogInDate",
+			"singUpDatef",
+			"lName",
+			"option",
+			"inactiveOption",
+			"starusSelect",
+			"select",
+			"td",
+			"actionTD",
+			"output",
+			"addGroup",
+			"alert",
+			"deletedGroup",
+			"aptualizat",
+			"adaugat",
+			"addedGroup",
+			"updatedGroup",
+			"addedGroup",
+			"deleteGroup",
+			"alert",
+			"alertBody",
+			"text",
+			"x",
+			"addGroup",
+			"deleteGroup",
+			"askCancelCurrenGroupToEditAnotherOne",
+			"deleteTheGroupYourEditing",
+			"checkAll",
+			"sterge",
+			"deleting",
+			"val",
+			"Drepturi",
+			"groupPermissions",
+			"canNotDelete",
+			"resultsNotFond",
+			"canNotAdd",
+			"newToken",
+			"success",
+			"addOrUpdate",
+			"noGroupsAdded",
+			"askCancelCurrenGroupToEditAnotherOne",
+			"cancelEdit",
+			"cancelAddGroup",
+			"cancelEdit",
+			"cancelAddGroup",
+			"addOrUpdate",
+			"addGroupFormTitle",
+			"formError",
+			"displayErrors",
+			"formError",
+			"fieldErrorClass",
+			"formError",
+			"editLink",
+			"deleteGroup",
+			"edit",
+			"td",
+			"actionsTD",
+			"editGroup"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".displayTable",
+			"updateField",
+			"Google_Drive",
+			"$this->setError",
+			"header",
+			"tbody",
+			"displayErrors",
+			"errorsTable",
+			"addAliasBtnID",
+			"aliasesRows",
+			"displayAliases",
+			"aliasesTable",
+			"loginOnly",
+			"structureItemXMLAttribute",
+			"structureItemXMLAttributes",
+			"structureItemXMLAttributeValue",
+			"structureItemXMLAttributeName",
+			"structureItemXMLAttribute",
+			"structureItemXMLAttributes",
+			"structureItemXMLAttributeNameClass",
+			"structureItemXMLAttributeValueClass",
+			"structureItemAttributeXMLValueClass",
+			"structureItemAttributeXMLNameClass",
+			"structureItemXMLAttributeClass",
+			"structureItemXMLAttributesClass",
+			"renderHTML",
+			"feeds",
+			"length",
+			"lenght",
+			"suppliers",
+			");\n",
+			"imgViewer",
+			"imageViewer",
+			"url",
+			"Search",
+			".",
+			"stateDot",
+			"insertGroupInToOCTables",
+			".append(attrNameTH)",
+			"categories.subCatsClass",
+			"categories.rowClass",
+			"categories.nameClass",
+			"categories.id",
+			"productModel->checkHasAttribute",
+			"checkAttribteBelongsToThisGroup",
+			"deleteAttributes",
+			"checkAttribteBelongsTuThisGroup",
+			"attrRow",
+			"for=\"prd",
+			"id=\"prd",
+			"",
+			"formRow"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "new_admin/System/Libraries/Controller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "new_admin/System/Libraries/Model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "new_admin/System/Libraries/Pagination.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "new_admin/System/Libraries/View.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "new_admin/System/Core/Core.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "new_admin/System/Core/Router.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1159,
+								1159
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 359.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "new_admin/App/Routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "new_admin/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2036,
+								2036
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 172.0
+	},
+	"pinned_build_system": "",
+	"project": "proline.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

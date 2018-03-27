@@ -1,39 +1,48 @@
 <?php
 namespace Storemaker\System\Libraries;
 
-use Storemaker\App\Libraries\User;
-
 class Controller {
 	protected $model,
-				 $view,
 				 $thisUser,
-				 $jsonResponse;
+				 $container,
+				 $paginationPath;
 
-	function __construct() {
-		$this->view = new View();
-		$this->thisUser = User::init();
-		$this->jsonResponse = new JsonResponse();
-	}
+	function __construct($container) {
+		$this->container = $container;
 
-	public function setModel($model) {
-		if (class_exists($model)) {
-			$this->model = new $model();
+		if (method_exists($this, 'construct')) {
+			$this->construct();
 		}
 	}
 
-	protected function redirect($value = '') {
-		header('Location: '.Config::get('site/domain').$value);
-	}
-
-	protected function loginOnly($redirect = 'index') {
-		if (!$this->thisUser->isLogIn()) {
-			$this->redirect($redirect);
+	function __get($property) {
+		if (isset($this->container->{$property})) {
+			return $this->container->{$property};
+		} else if (isset($this->{$property})) {
+			return $this->{$property};
 		}
 	}
 
-	protected function logOutOnle($redirect = 'index') {
-		if ($this->thisUser->isLogIn()) {
-			$this->redirect($redirect);
+	protected function setPaginationPath($path) {
+		$this->paginationPath = $path;
+	}
+
+	protected function paginationToJSON($paginator, $range = 10)	{
+		$paginator->setPath($this->paginationPath);
+		$this->container->jsonResponse->setData('pagination', $this->container->view->fetch('_layout_tamplate/styles/'.$this->container->config->get('site/style').'/partials/pagination.twig', ['paginator' => $paginator, 'range' => $range]));
+	}
+
+	public function __destruct() {
+		if (!empty($this->container->request->getParam('ajaxRequestToken'))) {
+			unset($_SESSION['validationErrors']);
+			header('Content-Type: application/json;charset=utf-8');
+			$this->container->jsonResponse->setToken($this->container->request->getParam('ajaxRequestToken'),  [
+				'nameKey' => $this->container->csrf->getTokenNameKey(),
+				'name' => $this->container->csrf->getTokenName(),
+				'valueKey' => $this->container->csrf->getTokenValueKey(),
+				'value' => $this->container->csrf->getTokenValue()
+			]);
+			$this->container->jsonResponse->getResponse();
 		}
 	}
 }

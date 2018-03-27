@@ -1,0 +1,153 @@
+{% extends '_layout_tamplate/styles/default/app.twig' %}
+
+{% block headTitle %}
+	{% if user.id == auth.user().id %}
+		{{ language.translate('myProfile') }}
+	{% else %}
+		{{ language.translate('hisProfile') }} {{ user.userName }}
+	{% endif %}
+{% endblock %}
+{% block headCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ config.get('url/style') }}users/css/accounts.css">
+{% endblock %}
+{% block headJS %}
+    <script src="{{ config.get('url/style') }}users/js/accounts.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<div class="container-fluid">
+			<h1>
+				{% if user.id == auth.user().id %}
+					{{ language.translate('myProfile') }}
+				{% else %}
+					{{ language.translate('hisProfile') }} {{ user.userName }}
+				{% endif %}
+			</h1>
+			<ul class="breadcrumb">
+				<li><a href="#">{{ language.translate('users') }}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid">
+		{% if user.id == auth.user().id %}
+			<div class="container topActions">
+				<button id="editProfile" class="btn btn-default" data-toggle="modal" data-target="#editProfileForm">{{ language.translate('editProfile') }}</button>
+				<button id="changePassword" class="btn btn-default" data-toggle="modal" data-target="#changePasswordForm">{{ language.translate('changePassword') }}</button>
+			</div>
+		{% endif %}
+
+		<div class="container">
+			<table class="table table-striped" id="profileTable">
+				<thead>
+					<tr>
+						<th class="text-center lead" colspan="2">{{ user.userName }}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>{{ language.translate('formLabelFName') }}</th>
+						<td>{{ user.fName }}</td>
+					</tr>
+					<tr>
+						<th>{{ language.translate('formLabelLName') }}</th>
+						<td>{{ user.lName }}</td>
+					</tr>
+					<tr>
+						<th>{{ language.translate('formLabelEmail') }}</th>
+						<td>{{ user.email }}</td>
+					</tr>
+					<tr>
+						<th>{{ language.translate('formLabelSex') }}</th>
+						<td>{{ language.translate('formLabelSex'~(user.sex | upper)) }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+		<div class="modal fade" id="editProfileForm" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">{{ language.translate('editProfile') }}</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeUpdateProfileBtn">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div id="updateProfileErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="fName">{{ language.translate('formLabelFName') }}</label>
+							<input type="text" name="fName" id="fName" class="form-control" value="{{ user.fName }}">
+						</div>
+						<div class="form-group">
+							<label for="lName">{{ language.translate('formLabelLName') }}</label>
+							<input type="text" name="lName" id="lName" class="form-control" value="{{ user.lName }}">
+						</div>
+						<div class="form-group">
+							<label>{{ language.translate('formLabelSex') }}</label>
+							<div id="sex" style="display:table-cell; width: 100%;">
+								<label for="sexM" class="form-check-label">
+									<input type="radio" name="sex" id="sexM" class="sex form-check-input" value="m"{{ user.sex == 'm' ? ' checked="checked"' : '' }}>
+									{{ language.translate('formLabelSexM') }}
+								</label>
+
+								<label for="sexF" class="form-check-label">
+									<input type="radio" name="sex" id="sexF" class="sex form-check-input" value="f"{{ user.sex == 'f' ? ' checked="checked"' : '' }}>
+									{{ language.translate('formLabelSexF') }}
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email">{{ language.translate('formLabelEmail') }}</label>
+							<input type="text" name="email" id="email" class="form-control" value="{{ user.email }}">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="updateProfileBtn" class="btn btn-primary">{{ language.translate('save') }}</button>
+						<button type="button" id="cancelUpdateProfileBtn" class="btn btn-secondary" data-dismiss="modal">{{ language.translate('cancel') }}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="changePasswordForm" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">{{ language.translate('changePassword') }}</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeUpdatePasswordBtn">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div id="updatePasswordErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="oldPassword">{{ language.translate('formLabelCurrentPassword') }}</label>
+							<input type="password" id="oldPassword" class="form-control" autocomplete="new-password">
+							<label for="showPasswordOld" class="form-check-label showPassword pull-right">
+								{{ language.translate('showPassword') }}
+								<input type="checkbox" id="showPasswordOld" class="form-check-input showPassword" data-id='oldPassword'>
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="password">{{ language.translate('formLabelNewPassword') }}</label>
+							<input type="password" id="password" class="form-control" autocomplete="new-password">
+							<label for="showPassword" class="form-check-label showPassword pull-right">
+								{{ language.translate('showPassword') }}
+								<input type="checkbox" id="showPassword" class="form-check-input showPassword" data-id='password'>
+							</label>
+						</div>
+					<div class="modal-footer">
+						<button type="button" id="updatePasswordBtn" class="btn btn-primary">{{ language.translate('save') }}</button>
+						<button type="button" id="cancelUpdatePasswordBtn" class="btn btn-secondary" data-dismiss="modal">{{ language.translate('cancel') }}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	{{ csrf('users.profile') | raw }}
+{% endblock %}

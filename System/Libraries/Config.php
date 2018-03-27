@@ -2,16 +2,16 @@
 namespace Storemaker\System\Libraries;
 
 class Config {
-	private static $configArray = array();
+	private $configArray = [];
 
-	public static function setInitial(array $config)	{
-		self::$configArray = $config;
+	public function __construct(array $config) {
+		$this->configArray = $config;
 	}
 
-	public static function set($key, $value, $value2 = false) {
+	public function set($key, $value, $value2 = false) {
 		$keys = explode('/', $key);
 		$k = array_shift($keys);
-		$configArray = ($value2 !== false) ? $value2 : self::$configArray;
+		$configArray = ($value2 !== false) ? $value2 : $this->configArray;
 
 		if (!isset($configArray[$k])) {
 			$configArray[$k] = [];
@@ -20,15 +20,15 @@ class Config {
 		if (count($keys) == 0) {
 			$configArray[$k] = $value;
 		} else if ($value2 === false) {
-			self::$configArray[$k] = self::set(implode('/', $keys), $value, $configArray[$k]);
+			$this->configArray[$k] = $this->set(implode('/', $keys), $value, $configArray[$k]);
 		} else {
-			$configArray[$k] = self::set(implode('/', $keys), $value, $configArray[$k]);
+			$configArray[$k] = $this->set(implode('/', $keys), $value, $configArray[$k]);
 		}
 		return $configArray;
 	}
 
-	public static function get($key) {
-		$value = self::$configArray;
+	public function get($key) {
+		$value = $this->configArray;
 
 		foreach (explode('/', $key) as $k) {
 			if (isset($value[$k])) {
@@ -39,7 +39,7 @@ class Config {
 		return $value;
 	}
 
-	public static function dump() {
-		echo "<pre>", print_r(self::$configArray, true), "</pre>";
+	public function dump() {
+		echo "<pre>", print_r($this->configArray, true), "</pre>";
 	}
 }

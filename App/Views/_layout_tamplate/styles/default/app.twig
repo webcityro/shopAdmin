@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+		<link rel="stylesheet" href="{{ config.get('url/style') }}_layout_template/css/fontawesome/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="{{ config.get('url/style') }}_layout_template/css/app.css">
+		{% block headCSS %}{% endblock %}
+
+		<script src="{{ base_url() }}/router.js"></script>
+		<script src="{{ config.get('url/style') }}_layout_template/js/language.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="{{ config.get('url/style') }}_layout_template/js/error_handle.js"></script>
+		<script>
+
+			var config = {
+				domain: "{{ config.get('site/domain') | raw }}",
+				url: {{ config.get("url") | json_encode | raw }},
+				store: {{ config.get("store") | json_encode | raw }}
+			};
+
+			var auth = {
+				check: {{ auth.check() | json_encode }}
+				{% if auth.check() %}
+					,user: {{ auth.user() | json_encode | raw }},
+					group: {
+						id: {{ auth.isOwner() ? 0 : auth.group().id }},
+						name: '{{ auth.isOwner() ? "owner" : auth.group().name }}',
+						level: {{ auth.isOwner() ? 0 : auth.group().level }},
+						permissions: {{ auth.isOwner() ? "{}" : auth.group().permissions | json_encode | raw }}
+					},
+					isOwner: {{ auth.isOwner() | json_encode }}
+				{% endif %}
+			};
+
+			var language = new language();
+
+			language.set({{ language.getJSON() | raw }});
+		</script>
+		<script src="{{ config.get('url/style') }}_layout_template/js/init.js"></script>
+		{% block headJS %}{% endblock %}
+
+		<title>{{ config.get('site/name') }} - {% block headTitle %}{% endblock %}</title>
+	</head>
+	<body>
+		{% include '_layout_tamplate/styles/default/partials/flashMessages.twig' %}
+		<div id="container">
+			{% include '_layout_tamplate/styles/default/partials/header.twig' %}
+			{% include '_layout_tamplate/styles/default/partials/navigation.twig' %}
+			<div id="content">
+				{% block content %}{% endblock %}
+			</div>
+			{% include '_layout_tamplate/styles/default/partials/footer.twig' %}
+		</div>
+		{% block bodyEndJS %}{% endblock %}
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
