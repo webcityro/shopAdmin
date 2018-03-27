@@ -144,6 +144,7 @@ $language['loginRequired'] = 'Trebuie sa te loghezi inainte sa accesezi aceasta 
 $language['logoutRequired'] = 'Daca esti deja logat nu ai de ce sa accesezi acea sectiune!';
 $language['userAccessDenied'] = 'Nu ai drept de acces in aceasta sectiune!';
 $language['dontHavePermissionForAction'] = 'Nu ai drepturile necesare pentru a executa aceasta actiune!';
+$language['userDizctivated'] = 'Contul tau a fost dezactivat!';
 
 $language['formLabelRememberMe'] = 'Tine-ma minte';
 $language['formLoginBtn'] = 'Logheaza-te!';

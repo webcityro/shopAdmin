@@ -82,7 +82,7 @@ $container['email'] = function ($container) {
 	return $email;
 };
 
-$container['auth'] = function ($container) {
+$container['auth'] = function ($container) use($app) {
 	return new \Storemaker\App\Auth\Auth($container);
 };
 

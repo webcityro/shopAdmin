@@ -50,7 +50,10 @@
 		{% include '_layout_tamplate/styles/default/partials/flashMessages.twig' %}
 		<div id="container">
 			{% include '_layout_tamplate/styles/default/partials/header.twig' %}
-			{% include '_layout_tamplate/styles/default/partials/navigation.twig' %}
+
+			{% if auth.check() %}
+				{% include '_layout_tamplate/styles/default/partials/navigation.twig' %}
+			{% endif %}
 			<div id="content">
 				{% block content %}{% endblock %}
 			</div>
