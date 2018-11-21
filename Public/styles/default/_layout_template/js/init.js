@@ -1,8 +1,17 @@
 const errorsHandler = new errorHandler();
-var paginationWrapper;
+const persistData = new persistentData();
+const validation = new validator();
+const formLanguageClass = 'form-language';
+var paginationWrapper,
+	 formLanguage,
+	 docBody,
+	 rightNav;
 
 $(function(e) {
 	paginationWrapper = $('#paginationWrapper');
+	formLanguage = $('.'+formLanguageClass);
+	docBody = $('body');
+	rightNav = $('#rightNav');
 
 	$('#button-menu').on('click', function(e) {
 		e.preventDefault();
@@ -24,6 +33,8 @@ $(function(e) {
 	$('#myModal').on('shown.bs.modal', function () {
 		$('#myInput').trigger('focus')
 	});
+
+	persistData.init(formLanguage);
 });
 
 function modal(title, body, callbeck, okLabel, cancelLabel) {
@@ -101,6 +112,8 @@ function ajax(params) {
 		ajaxObj.data.ajaxRequestToken = tokenKey;
 	}
 
+	console.log('ajaxData', ajaxObj);
+
 	if (typeof params.extend === 'object') {
 		for (let i in params.extend) {
 			ajaxObj[i] = params.extend[i];
@@ -165,4 +178,8 @@ function flashMessage(type, msg, time) {
 			alertDiv.slideUp(500).remove();
 		}, (typeof time === 'number') ? time : 10000);
 	}
+}
+
+function cl(msg) {
+	console.log(msg);
 }

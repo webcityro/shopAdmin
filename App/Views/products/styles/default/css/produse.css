@@ -1,0 +1,85 @@
+.formPart {
+	margin: 0 5px;
+}
+
+.formPart.selected {
+	color: #000;
+	background: #2ecc71;
+}
+#formGroupImages #images {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 20px 0 0 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#formGroupImages #images .image {
+	margin: 5px;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	background: #ccc;
+}
+
+#formGroupImages #images .image:hover {
+	background: #888;
+}
+
+#formGroupImages #images .image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#formGroupImages #images .image.productImage {
+	background: #00a;
+}
+
+#attributeStates {
+	margin: auto;
+	width: 350px;
+	list-style: none;
+}
+
+#attributeStates li .stateDot {
+	display: inline-block;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+}
+
+#attributeStates li .stateDot#original {
+	background: #00f;
+}
+
+#attributeStates li .stateDot#sablon {
+	background: #0f0;
+}
+
+#attributeStates li .stateDot#sablonNotUsed {
+	background: #f00;
+}
+
+#groups .group table {
+	border-collapse: collapse;
+}
+
+.group .groupMenu button, #cancelPrdBtn {
+	margin-right: 10px;
+}
+
+.prdAttrOriginal {
+	border: 2px solid #00f;
+}
+
+.prdAttrSablonNotUsed {
+	border: 2px solid #f00;
+}
+
+.prdAttrSablon {
+	border: 2px solid #0f0;
+}

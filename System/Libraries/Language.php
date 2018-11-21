@@ -6,7 +6,8 @@ class Language {
 			  $code,
 			  $directory,
 			  $image,
-			  $languageArray = [];
+			  $languageArray = [],
+			  $languages;
 	protected $container;
 
 	public function __construct($container) {
@@ -15,7 +16,15 @@ class Language {
 		if (empty($this->language)) {
 			$languageID = (isset($_COOKIE['languageID'])) ? $_COOKIE['languageID'] : $this->container->config->get('system/languageID');
 
-			$lang = $this->container->db->table('languages')->where('id', $languageID)->first();
+			$this->languages = $this->container->db->table('languages')->where('active', 1)->orderBy('sortOrder', 'ASC');
+			$lang = false;
+
+			foreach ($this->languages->get() as $l) {
+				if ($l->id == $languageID) {
+					$lang = $l;
+					break;
+				}
+			}
 
 			if ($lang) {
 				$this->language = $lang->name;
@@ -28,9 +37,11 @@ class Language {
 				$this->directory = 'ro';
 				$this->image = 'RO_ro.png';
 			}
-
-			$this->load('global');
 		}
+	}
+
+	public function getList() {
+		return $this->languages->get();
 	}
 
 	public function set($lang) {

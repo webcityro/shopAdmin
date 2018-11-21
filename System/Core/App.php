@@ -4,7 +4,6 @@ session_start();
 use Storemaker\System\Libraries\Config;
 use Storemaker\System\Libraries\Session;
 use Storemaker\System\Libraries\Language;
-use Storemaker\App\Libraries\Categories;
 use Storemaker\App\Models\Setting;
 use Storemaker\App\Models\Store;
 use Respect\Validation\Validator as V;
@@ -100,7 +99,7 @@ $container['view'] = function ($container) {
 	$view->getEnvironment()->addGlobal('auth', $auth);
 
 	$view->getEnvironment()->addGlobal('config', $container->config);
-	$view->getEnvironment()->addGlobal('language', $container->language);
+	// $view->getEnvironment()->addGlobal('language', $container->language);
 	$view->getEnvironment()->addGlobal('flash', $container->flash);
 
 	return $view;
@@ -113,9 +112,11 @@ $container['validator'] = function ($container) {
 V::with('Storemaker\\App\\Validation\\Rules\\');
 
 $app->add($container->csrf);
+$app->add(new \Storemaker\App\Middleware\LanguageMiddleware($container));
 $app->add(new \Storemaker\App\Middleware\ValidationErrorsMiddleware($container));
 $app->add(new \Storemaker\App\Middleware\CsrfViewMiddleware($container));
 $app->add(new \Storemaker\App\Middleware\PaginationMiddleware($container));
+$app->add(new \Storemaker\App\Middleware\PersistentDataMiddleware($container));
 
 $container['HomeController'] = function ($container) {
 	return new \Storemaker\App\Controllers\HomeController($container);
@@ -131,6 +132,14 @@ $container['UsersGroupsController'] = function ($container) {
 
 $container['ForgetPasswordController'] = function ($container) {
 	return new \Storemaker\App\Controllers\Users\ForgetPasswordController($container);
+};
+
+$container['unitsOfMeasurementController'] = function ($container) {
+	return new \Storemaker\App\Controllers\System\UnitsOfMeasurementController($container);
+};
+
+$container['PersistentDataController'] = function ($container) {
+	return new \Storemaker\App\Controllers\Ajax\PersistentDataController($container);
 };
 
 $app->get('/router.js', function($req, $res, $args) {

@@ -225,7 +225,7 @@ $(function(e) {
 			if (usersCount > 0) {
 				body.append(p).append(row);
 				p.addClass('lead text-center').text(language.translate('deleteGroupPharagraf', [name, usersCount]));
-				row.addClass('row').append(colLeft).append(colRight)
+				row.addClass('row').append(colLeft).append(colRight);
 				colLeft.addClass('col-sd-6 col-md-6 text-center form-group').append(labelLeft).append(groupsSelect);
 				labelLeft.attr('for', 'moveUsersToGroupID').text(language.translate('choseGroupToMoveUsers'));
 				groupsSelect.addClass('form-control').attr('id', 'moveUsersToGroupID').append(defaultOption);

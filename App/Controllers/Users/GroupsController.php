@@ -8,7 +8,7 @@ class GroupsController extends Controller {
 	private $siteSections = [];
 
 	function construct() {
-		$this->language->load('UserGroups');
+		$this->language->load('Users/Groups');
 
 		$this->siteSections = [
 	  		'users/accounts' => [

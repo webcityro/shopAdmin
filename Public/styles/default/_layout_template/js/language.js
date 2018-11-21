@@ -1,4 +1,4 @@
-function language () {
+function languageObject () {
 	this.languageJSON = {};
 
 	this.set = function(json) {

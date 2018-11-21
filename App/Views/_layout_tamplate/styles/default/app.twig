@@ -15,12 +15,15 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="{{ config.get('url/style') }}_layout_template/js/error_handle.js"></script>
+		<script src="{{ config.get('url/style') }}_layout_template/js/persistent_data.js"></script>
+		<script src="{{ config.get('url/style') }}_layout_template/js/validation.js"></script>
 		<script>
 
-			var config = {
+			const config = {
 				domain: "{{ config.get('site/domain') | raw }}",
 				url: {{ config.get("url") | json_encode | raw }},
-				store: {{ config.get("store") | json_encode | raw }}
+				store: {{ config.get("store") | json_encode | raw }},
+				system: {{ config.get("system") | json_encode | raw }}
 			};
 
 			var auth = {
@@ -37,11 +40,24 @@
 				{% endif %}
 			};
 
-			var language = new language();
+			const language = new languageObject();
 
 			language.set({{ language.getJSON() | raw }});
 		</script>
 		<script src="{{ config.get('url/style') }}_layout_template/js/init.js"></script>
+		{% if auth.check() %}
+			<script>
+				persistData.setSection('{{ currentPath }}');
+			</script>
+
+			{% if persistentData.currentItem or persistentData.newData or persistentData.editData %}
+				<script>
+					window.addEventListener('load', e => {
+						persistData.load({{ persistentData | json_encode | raw }});
+					});
+				</script>
+			{% endif %}
+		{% endif %}
 		{% block headJS %}{% endblock %}
 
 		<title>{{ config.get('site/name') }} - {% block headTitle %}{% endblock %}</title>
@@ -60,6 +76,7 @@
 			{% include '_layout_tamplate/styles/default/partials/footer.twig' %}
 		</div>
 		{% block bodyEndJS %}{% endblock %}
+		{{ csrf('ajax.persitentData') | raw }}
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>

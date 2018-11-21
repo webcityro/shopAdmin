@@ -1,0 +1,68 @@
+{% extends '_layout_tamplate/styles/default/app.twig' %}
+
+{% block headTitle %}{{ language.translate('pageTitle') }}{% endblock %}
+{% block headCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ config.get('url/style') }}system/css/unitsOfMeasurement.css">
+{% endblock %}
+{% block headJS %}
+    <script src="{{ config.get('url/style') }}system/js/unitsOfMeasurement.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="pull-right">
+				<button type="submit" form="form-user-group" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save">
+					<i class="fa fa-save"></i>
+				</button>
+				<a href="#" data-toggle="tooltip" title="" class="btn btn-default" id="persistent-data-start-new-item" data-original-title="Cancel">
+					<i class="fa fa-reply"></i>
+				</a>
+			</div>
+			<h1>{{ language.translate('pageTitle') }}</h1>
+			<ul class="breadcrumb">
+				<li><a href="#">{{ language.translate('system') }}</a></li>
+			</ul>
+		</div>
+		<div class="container topActions">
+			{% if auth.permissions('system/unitsOfMeasurement', 'add') %}
+				<button id="showAddUnit" class="btn btn-default">{{ language.translate('addUnit') }}</button>
+			{% endif %}
+		</div>
+
+		<div class="row">
+			<div id="loginForm" class="panel panel-default col-md-10 col-md-offset-1">
+				<div class="panel-heading">
+					<h3 class="panel-title" id="addGroupFormTitle">{{ language.translate('addAUnit') }}</h3>
+				</div>
+				<div class="panel-body">
+					<form action="{{ path_for('system.unitsOfMeasurement') }}" method="post">
+						{{ formLanguagesHeader | raw }}
+						<div id="UnitErrors" class="hide"></div>
+						<div class="form-group">
+							<label for="name">{{ language.translate('unitName') }} <em>{{ language.translate('unitNameEx') }}</em></label>
+							<input type="text" id="name" class="form-control persistent-data persistent-data-language">
+						</div>
+						<div class="form-group">
+							<label for="abbreviation">{{ language.translate('unitAbbreviation') }} <em>{{ language.translate('unitAbbreviationEx') }}</em></label>
+							<input type="text" id="abbreviation" class="form-control persistent-data persistent-data-language">
+						</div>
+						<div class="form-group">
+							<label for="value">{{ language.translate('unitValue') }} <em>{{ language.translate('unitValueEx') }}</em></label>
+							<input type="text" id="value" class="form-control persistent-data">
+						</div>
+						<div class="form-group">
+							<label for="type">{{ language.translate('unitType') }}</label>
+							<select id="type" class="form-control persistent-data" data-default-value="{{ types|keys[0] }}">
+								{% for key, type in types %}
+								    <option value="{{ key }}">{{ type }}</option>
+								{% endfor %}
+							</select>
+						</div>
+						{{ csrf('system.unitsOfMeasurement') | raw }}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -7,12 +7,14 @@ use Storemaker\App\Middleware\UserPermissionsMiddleware;
 $app->group('', function() use($container) {
 	$this->get('/', 'HomeController:index')->setName('home');
 
-	/* users */
+	/* users / accounts */
 	$this->get('/users', 'AccountsController:index')->setName('users.accounts')->add(new UserPermissionsMiddleware($container, 'users/accounts', 'view'));
 	$this->post('/users/add', 'AccountsController:add')->setName('users.accounts.add')->add(new UserPermissionsMiddleware($container, 'users/accounts', 'add'));
 	$this->get('/users/get/{id}', 'AccountsController:get')->setName('users.accounts.get')->add(new UserPermissionsMiddleware($container, 'users/accounts', 'edit'));
 	$this->post('/users/update/{id}', 'AccountsController:update')->setName('users.accounts.update')->add(new UserPermissionsMiddleware($container, 'users/accounts', 'edit'));
 	$this->post('/users/delete/{id}', 'AccountsController:delete')->setName('users.accounts.delete')->add(new UserPermissionsMiddleware($container, 'users/accounts', 'delete'));
+
+	/* users / profile */
 	$this->get('/users/profile[/{user}]', 'AccountsController:showProfile')->setName('users.profile');
 	$this->post('/users/profile/update', 'AccountsController:updateProfile')->setName('users.profile.update');
 	$this->post('/users/profile/changePassword', 'AccountsController:updatePassword')->setName('users.profile.changePassword');
@@ -25,6 +27,14 @@ $app->group('', function() use($container) {
 	$this->get('/users/groups/get/{id}', 'UsersGroupsController:get')->setName('users.groups.get')->add(new UserPermissionsMiddleware($container, 'users/groups', 'edit'));
 	$this->post('/users/groups/update/{id}', 'UsersGroupsController:update')->setName('users.groups.update')->add(new UserPermissionsMiddleware($container, 'users/groups', 'edit'));
 	$this->post('/users/groups/delete/{id}', 'UsersGroupsController:delete')->setName('users.groups.delete')->add(new UserPermissionsMiddleware($container, 'users/groups', 'delete'));
+
+	/* system / unitsOfMeasurementController */
+	$this->get('/system/unitsOfMeasurement', 'unitsOfMeasurementController:index')->setName('system.unitsOfMeasurement')->add(new UserPermissionsMiddleware($container, 'system/unitsOfMeasurement', 'view'));
+
+	/* ajax */
+	$this->post('/ajax/persistent_data/save/{id}', 'PersistentDataController:save')->setName('ajax.persitentData.save');
+	$this->post('/ajax/persistent_data/setcurrent/{id}', 'PersistentDataController:setCurrent')->setName('ajax.persitentData.setCurrent');
+	$this->post('/ajax/persistent_data/delete/{id}', 'PersistentDataController:delete')->setName('ajax.persitentData.delete');
 })->add(new AuthMiddleware($container));
 
 $app->group('', function() use($container) {

@@ -1,0 +1,1166 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"validation"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"vali",
+				"validator〔class〕"
+			],
+			[
+				"u",
+				"unitsOfMeasurement"
+			],
+			[
+				"f",
+				"f\tAnonymous Function"
+			],
+			[
+				"d",
+				"defaultLanguageID〔variable〕"
+			],
+			[
+				"la",
+				"languageID"
+			],
+			[
+				"ret",
+				"return〔keyword〕"
+			],
+			[
+				"l",
+				"languageID〔variable〕"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"this",
+				"this.currentItemID"
+			],
+			[
+				"c",
+				"currentItemID〔variable〕"
+			],
+			[
+				"val",
+				"value〔variable〕"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"delete",
+				"deleteArticle"
+			],
+			[
+				"bo",
+				"body"
+			],
+			[
+				"col",
+				"colRight"
+			],
+			[
+				"do",
+				"dontDeleteArticleLabel"
+			],
+			[
+				"dontDeleteArticle",
+				"dontDeleteArticleRadio"
+			],
+			[
+				"dela",
+				"deleteArticleRadio"
+			],
+			[
+				"dal",
+				"deleteArticleLabel"
+			],
+			[
+				"sl",
+				"slideUp\t.slideUp()"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"fw",
+				"font-weight\tproperty"
+			],
+			[
+				"br",
+				"border-radius\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"b",
+				"background\tproperty"
+			],
+			[
+				"o",
+				"overflow\tproperty"
+			],
+			[
+				"m",
+				"max-height\tproperty"
+			],
+			[
+				"border-b",
+				"border-bottom\tproperty"
+			],
+			[
+				"ma",
+				"max-width\tproperty"
+			],
+			[
+				"slideT",
+				"slideTime〔variable〕"
+			],
+			[
+				"sd",
+				"slideDot"
+			],
+			[
+				"fi",
+				"first\t.first()"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"ani",
+				"animate\t.animate()"
+			],
+			[
+				"im",
+				"imageColWidth"
+			],
+			[
+				"nex",
+				"nextSlide"
+			],
+			[
+				"slideD",
+				"slideDot"
+			],
+			[
+				"cur",
+				"cursor\tproperty"
+			],
+			[
+				"r",
+				"round〔function〕"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"slide",
+				"slide-image"
+			],
+			[
+				"fo",
+				"foreach"
+			],
+			[
+				"col-",
+				"col-md-4"
+			],
+			[
+				"text",
+				"text-decoration\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"op",
+				"opacity\tproperty"
+			],
+			[
+				"ba",
+				"background-size\tproperty"
+			],
+			[
+				"bre",
+				"background-repeat\tproperty"
+			],
+			[
+				"e",
+				"endforeach"
+			],
+			[
+				"po",
+				"pos-r\tposition: relative;"
+			],
+			[
+				"de",
+				"details"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"a",
+				"alt\tAttr"
+			],
+			[
+				"border-t",
+				"border-top-left-radius\tproperty"
+			],
+			[
+				"att",
+				"attr\t.attr() - single"
+			],
+			[
+				"j",
+				"justify-content\tproperty"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"cat",
+				"categorie"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"B",
+				"Bdg〔namespace〕"
+			],
+			[
+				"M",
+				"Models〔namespace〕"
+			],
+			[
+				"__",
+				"__construct〔function〕"
+			],
+			[
+				"S",
+				"Setting〔namespace〕"
+			],
+			[
+				"iss",
+				"isset〔function〕"
+			],
+			[
+				"setti",
+				"settings"
+			],
+			[
+				"req",
+				"$request〔variable〕"
+			],
+			[
+				"new",
+				"$newImageName〔variable〕"
+			],
+			[
+				"da",
+				"data-index"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"be",
+				"beforeSend"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"sh",
+				"showOnBannerField"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"ca",
+				"cancelLink"
+			],
+			[
+				"O",
+				"OrderStatus"
+			],
+			[
+				"cha",
+				"change"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"product",
+				"productID"
+			],
+			[
+				"status",
+				"statusID"
+			],
+			[
+				"pla",
+				"platita"
+			],
+			[
+				"atr",
+				"attr\t.attr() - single"
+			],
+			[
+				"data",
+				"data-product-id"
+			],
+			[
+				"q",
+				"quantity"
+			],
+			[
+				"ac",
+				"actionsTD"
+			],
+			[
+				"tot",
+				"totalTD"
+			],
+			[
+				"pri",
+				"priceTD"
+			],
+			[
+				"na",
+				"nameTD"
+			],
+			[
+				"id",
+				"idTH"
+			],
+			[
+				"pr",
+				"productDeleteClass"
+			],
+			[
+				"ad",
+				"addClass〔function〕"
+			],
+			[
+				"n",
+				"$newProduct〔variable〕"
+			],
+			[
+				"pric",
+				"priceTypeID"
+			],
+			[
+				"prod",
+				"$product〔variable〕"
+			],
+			[
+				"tota",
+				"totalRow"
+			],
+			[
+				"min",
+				"minQuantity"
+			],
+			[
+				"resu",
+				"resultsRow"
+			],
+			[
+				"p",
+				"productRow"
+			],
+			[
+				"remo",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"ovy",
+				"ovy-a\toverflow-y: auto;"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"type",
+				"typeof〔keyword〕"
+			],
+			[
+				"pro",
+				"$products〔variable〕"
+			],
+			[
+				"mo",
+				"modalContainer"
+			],
+			[
+				"ta",
+				"tableRow"
+			],
+			[
+				"tit",
+				"titleRow"
+			],
+			[
+				"nam",
+				"nameTD"
+			],
+			[
+				"tb",
+				"tbodyTR"
+			],
+			[
+				"the",
+				"theadTR"
+			],
+			[
+				"thead",
+				"theadIDTH"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"del",
+				"deleteProduct"
+			],
+			[
+				"doc",
+				"docBody"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"or",
+				"orderTotal"
+			],
+			[
+				"order",
+				"$orderProdect〔variable〕"
+			],
+			[
+				"mi",
+				"minQuantity"
+			],
+			[
+				"ch",
+				"changeQuantity"
+			],
+			[
+				"sta",
+				"startDate"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"stat",
+				"statusTD"
+			],
+			[
+				"pay",
+				"payedTD"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "System/Core/App.php",
+			"settings":
+			{
+				"buffer_size": 4679,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "App/Routes.php",
+			"settings":
+			{
+				"buffer_size": 3838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "App/Controllers/system/UnitsOfMeasurementController.php",
+			"settings":
+			{
+				"buffer_size": 826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "App/Views/system/unitsOfMeasurement.twig",
+			"settings":
+			{
+				"buffer_size": 2952,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Public/styles/default/system/js/unitsOfMeasurement.js",
+			"settings":
+			{
+				"buffer_size": 359,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Public/styles/default/_layout_template/js/persistent_data.js",
+			"settings":
+			{
+				"buffer_size": 10274,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Public/styles/default/_layout_template/js/validation.js",
+			"settings":
+			{
+				"buffer_size": 320,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 36.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"d",
+				"Package Control: Discover Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"pr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagei",
+				"Package Control: Install Package"
+			],
+			[
+				"H",
+				"HTMLBeautify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 538.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"dir",
+			"ls",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/App"
+	],
+	"file_history":
+	[
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/App/Middleware/LanguageMiddleware.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/Public/styles/default/_layout_template/js/init.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/App/Models/Ajax/PersistentData.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/development/Parsley.js-master/doc/examples/customvalidator.html",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/App/Views/_layout_tamplate/styles/default/app.twig",
+		"/E/serva/root/NWA_PXE/zorin_os/ServaAsset.inf",
+		"/C/Users/Andy/Google_Drive/wamp/www/storemaker/App/Middleware/PersistentDataMiddleware.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/development/date site.txt",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/development/ip.txt",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/routes/web.php",
+		"/C/Users/Andy/AppData/Local/Temp/scp37024/var/sentora/hostdata/zadmin/public_html/bottegadelgusto_ro/config/mail.php",
+		"/C/Users/Andy/AppData/Local/Temp/scp36671/var/sentora/hostdata/zadmin/public_html/bottegadelgusto_ro/.env",
+		"/C/Users/Andy/AppData/Local/Temp/scp05657/etc/sentora/configs/apache/httpd-vhosts.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp51628/var/sentora/hostdata/zadmin/public_html/bottegadelgusto_ro/public/.htaccess",
+		"/C/Users/Andy/AppData/Local/Temp/scp27465/var/sentora/hostdata/zadmin/public_html/bottegadelgusto_ro/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/seeds/order_statuses_table_seader.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/seeds/users_table_seader.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/migrations/2018_06_24_210023_create_products_table.php",
+		"/C/Users/Andy/AppData/Local/Temp/scp46357/var/sentora/hostdata/zadmin/public_html/bottegadelgusto_ro/config/app.php",
+		"/C/Users/Andy/AppData/Local/Temp/scp20748/var/repo/bottegadelgusto.get/hooks/post-receive",
+		"/C/Users/Andy/AppData/Local/Temp/scp34230/var/repo/bottegadelgusto.get/hooks/post-receive",
+		"/C/Users/Andy/AppData/Local/Temp/scp49040/var/repo/bottegadelgusto.get/refs/heads/master",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/.gitignore",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/app.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/admin/users.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/admin/orders.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/cart.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/profile/edit.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/cart/mail.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/auth/singup.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/auth/forgetPasswordMail.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/productsEdit.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/products.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/orders.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/CartController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/Admin/HomeController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/Admin/OrdersController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/Admin/ProductsController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/categories.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/AuthController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/lang/ro/validation.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/templates/partials/adminNavbar.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/cart/index.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/orders/orders.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/home.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/app.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/templates/default.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/auth/forgetPassword.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/templates/email.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/auth/singin.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/auth/resetPassword.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/profile/changePassword.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/orders.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/orders/orderShow.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/contact.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/cart.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/product.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/products.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/products.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/ProductsController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/templates/partials/header.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/HomeController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/home.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/home.js",
+		"/C/Users/Andy/AppData/Local/Temp/scp18729/etc/sentora/configs/bind/zones/bottegadelgusto.ro.txt",
+		"/C/Users/Andy/AppData/Local/Temp/scp22533/etc/apache2/sites-available/default-ssl.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp20159/etc/apache2/apache2.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp33364/etc/sentora/configs/apache/httpd.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp23869/etc/sentora/configs/apache/httpd-vhosts.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp10091/etc/sentora/panel/ssl/private.key",
+		"/C/Users/Andy/AppData/Local/Temp/scp49159/etc/sentora/panel/ssl/certificate.crt",
+		"/C/Users/Andy/AppData/Local/Temp/scp55135/etc/postfix/main.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp50383/etc/cron.daily/webalizer",
+		"/C/Users/Andy/AppData/Local/Temp/scp52857/etc/webalizer/webalizer.conf.sample",
+		"/C/Users/Andy/AppData/Local/Temp/scp34611/etc/postfix/dynamicmaps.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp29872/etc/sentora/configs/postfix/mysql-virtual_alias_maps.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp49227/etc/dovecot/conf.d/10-ssl.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp47539/etc/dovecot/conf.d/20-pop3.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp45468/etc/dovecot/conf.d/10-mail.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp24390/etc/dovecot/conf.d/10-auth.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp22036/etc/dovecot/conf.d/10-master.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp36658/etc/sentora/configs/postfix/master.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp02937/etc/postfix/master.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp43080/usr/sbin/postfix",
+		"/C/Users/Andy/AppData/Local/Temp/scp25161/usr/sbin/postconf",
+		"/C/Users/Andy/AppData/Local/Temp/scp54095/etc/sentora/configs/postfix/main.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp33303/etc/dovecot/conf.d/10-ssl.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp31553/etc/dovecot/conf.d/20-pop3.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp28921/etc/dovecot/conf.d/10-mail.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp47909/etc/dovecot/conf.d/10-auth.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp23206/etc/sentora/configs/postfix/master.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp42626/etc/dovecot/conf.d/10-master.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp53833/etc/sentora/configs/apache/httpd-vhosts.conf",
+		"/C/Users/Andy/AppData/Local/Temp/scp05634/etc/postfix/master.cf",
+		"/C/Users/Andy/AppData/Local/Temp/scp51388/etc/postfix/main.cf",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/categoriesEdit.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/categoriesAdd.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Models/Category.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/Admin/CategoriesController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/migrations/2018_06_20_234010_create_categories_table.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/index.html",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/development/index.html",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/development/logo.svg",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/product.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/templates/partials/navbar.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/ContactController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Libs/Settings.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Models/Setting.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/home.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/seeds/settings_table_seeder.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/seeds/price_types_table_seader.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/migrations/2018_07_18_124646_create_settings_table.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/config/filesystems.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/admin/products.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/productsAdd.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Models/Product.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/orders.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/OrdersController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Http/Controllers/Admin/UsersController.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Libs/Filter.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/css/adminOrder.css",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/admin/orderShow.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/resources/views/profile/show.blade.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/admin/admin_filter.js",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Libs/Admin/Filter.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/app/Models/OrderProduct.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/database/migrations/2018_07_02_210702_create_orders_products_table.php",
+		"/C/Users/Andy/Google_Drive/wamp/www/bdg/public/js/admin/ordersList.js"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 120.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Categories",
+			"login",
+			"x",
+			"validation",
+			"persistentData",
+			"persistData",
+			"$this->language->load('Validate",
+			"$this->language->load",
+			"language",
+			"persistent_data",
+			"data.languages",
+			"\"></",
+			"this.get(",
+			"this.get",
+			"populate",
+			"this.currentItemID =",
+			"persistentData",
+			"currentItemID",
+			"id",
+			"this.currentItemID",
+			"deleteArticleLabel",
+			"deleteArticleRadio"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "System/Core/App.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2722.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "App/Routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "App/Controllers/system/UnitsOfMeasurementController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "App/Views/system/unitsOfMeasurement.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1443,
+								1443
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Public/styles/default/system/js/unitsOfMeasurement.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Public/styles/default/_layout_template/js/persistent_data.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1272,
+								1272
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Public/styles/default/_layout_template/js/validation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								272
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.myOutput":
+	{
+		"height": 166.0
+	},
+	"pinned_build_system": "",
+	"project": "storemaker.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

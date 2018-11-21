@@ -7,7 +7,7 @@ use Storemaker\App\Models\Users\Group;
 
 class AccountsController extends Controller {
 	function construct() {
-		$this->language->load('Accounts');
+		$this->language->load('Users/Accounts');
 		$this->setPaginationPath('/users/accounts');
 	}
 

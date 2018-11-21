@@ -8,8 +8,34 @@
 		<a href="{{ config.site.domain }}" class="navbar-brand">StoreMaker</a>
 	</div>
 	{% if auth.check %}
-		<ul class="nav pull-right">
-			<li class="dropdown">
+		<ul class="nav pull-right" id="rightNav">
+			{% if persistentData.newData|length > 0 %}
+				<li class="pull-left dropdown" id="persistent-items-new">
+					<a class="dropdown-toggle lead prtsistentDataIcon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-file"><span class="badge">{{ persistentData.newData|length }}</span></i></a>
+					<ul class="dropdown-menu">
+						{% for persistDara in persistentData.newData %}
+						    <li class="dropdown-item" data-id="{{ persistDara.id }}">
+						    	<a href="#" class="persistent-item">{{ persistDara.name }}</a>
+						    	<a href="#" class="persistent-item-delete"><i class="far fa-trash-alt"></i></a>
+						    </li>
+						{% endfor %}
+					</ul>
+				</li>
+			{% endif %}
+			{% if persistentData.editData|length > 0 %}
+				<li class="pull-left dropdown" id="persistent-items-edit">
+					<a class="dropdown-toggle lead prtsistentDataIcon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-edit"><span class="badge">{{ persistentData.editData|length }}</span></i></a>
+					<ul class="dropdown-menu">
+						{% for persistDara in persistentData.editData %}
+						    <li class="dropdown-item" data-id="{{ persistDara.id }}">
+						    	<a href="#" class="persistent-item">{{ persistDara.name }}</a>
+						    	<a href="#" class="persistent-item-delete"><i class="far fa-trash-alt"></i></a>
+						    </li>
+						{% endfor %}
+					</ul>
+				</li>
+			{% endif %}
+			<li class="pull-right dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ auth.user.userName }} <span class="caret"></span></a>
 				<ul id="userDropdown" class="dropdown-menu">
 					<li><a href="{{ path_for('users.profile') }}">{{ language.translate('yourProfile') }}</a></li>

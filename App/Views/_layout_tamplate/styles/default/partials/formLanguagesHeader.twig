@@ -1,0 +1,10 @@
+<ul class="nav nav-tabs">
+	{% for lang in list %}
+	    <li class="nav-item{{ config.get('system/languageID') == lang.id ? ' active' : '' }}">
+	    	<a class="nav-link form-language" data-id="{{ lang.id }}">
+	    		<img src="{{ config.get('url/style') }}_layout_template/images/flags/{{ lang.image }}">
+	    		{{ lang.name }}
+	    	</a>
+	    </li>
+	{% endfor %}
+</ul>

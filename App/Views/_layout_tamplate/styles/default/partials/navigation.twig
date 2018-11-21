@@ -16,53 +16,82 @@
 				</ul>
 			</li>
 		{% endif %}
-		<li id="categories">
-			<a href="#">
-				<i class="fa fa-folder-open fa-fw"></i>
-				<span>{{ language.translate('categories') }}</span>
-			</a>
-		</li>
-		<li id="attributes">
-			<a class="parent">
-				<i class="fa fa-tags fa-fw"></i>
-				<span>{{ language.translate('attributes') }}</span>
-			</a>
-			<ul class="collapse">
-				<li><a href="#">{{ language.translate('attributes') }}</a></li>
-				<li><a href="#">{{ language.translate('groupsAttributes') }}</a></li>
-				<li><a href="#">{{ language.translate('templates') }}</a></li>
-			</ul>
-		</li>
-		<li id="products">
-			<a class="parent">
-				<i class="fa fa-box fa-fw"></i>
-				<span>{{ language.translate('products') }}</span>
-			</a>
-			<ul class="collapse">
-				<li><a href="#">{{ language.translate('products') }}</a></li>
-				<li><a href="#">{{ language.translate('productsFromFeeds') }}</a></li>
-				<li><a href="#">{{ language.translate('addedPrice') }}</a></li>
-			</ul>
-		</li>
-		<li id="suppliers">
-			<a class="parent">
-				<i class="fa fa-share-alt fa-fw"></i>
-				<span>{{ language.translate('suppliers') }}</span>
-			</a>
-			<ul class="collapse">
-				<li><a href="#">{{ language.translate('suppliers') }}</a></li>
-				<li><a href="#">{{ language.translate('feeds') }}</a></li>
-			</ul>
-		</li>
-		<li id="system">
-			<a class="parent">
-				<i class="fa fa-cog fa-fw"></i>
-				<span>{{ language.translate('system') }}</span>
-			</a>
-			<ul class="collapse">
-				<li><a href="#">{{ language.translate('aliases') }}</a></li>
-				<li><a href="#">{{ language.translate('errors') }}</a></li>
-			</ul>
-		</li>
+		{% if auth.permissions('categories', 'view') %}
+			<li id="categories">
+				<a href="#">
+					<i class="fa fa-folder-open fa-fw"></i>
+					<span>{{ language.translate('categories') }}</span>
+				</a>
+			</li>
+		{% endif %}
+		{% if auth.permissions('attributes', 'view') or auth.permissions('attributes/groups', 'view') or auth.permissions('attributes/templates', 'view') %}
+			<li id="attributes">
+				<a class="parent">
+					<i class="fa fa-tags fa-fw"></i>
+					<span>{{ language.translate('attributes') }}</span>
+				</a>
+				<ul class="collapse">
+					{% if auth.permissions('attributes', 'view') %}
+						<li><a href="#">{{ language.translate('attributes') }}</a></li>
+					{% endif %}
+					{% if auth.permissions('attributes/groups', 'view') %}
+						<li><a href="#">{{ language.translate('groupsAttributes') }}</a></li>
+					{% endif %}
+					{% if auth.permissions('attributes/templates', 'view') %}
+						<li><a href="#">{{ language.translate('templates') }}</a></li>
+					{% endif %}
+				</ul>
+			</li>
+		{% endif %}
+		{% if auth.permissions('products', 'view') or auth.permissions('products/addedPrice', 'view') %}
+			<li id="products">
+				<a class="parent">
+					<i class="fa fa-box fa-fw"></i>
+					<span>{{ language.translate('products') }}</span>
+				</a>
+				<ul class="collapse">
+					<li><a href="#">{{ language.translate('products') }}</a></li>
+					<li><a href="#">{{ language.translate('addedPrice') }}</a></li>
+				</ul>
+			</li>
+		{% endif %}
+		{% if auth.permissions('suppliers', 'view') or auth.permissions('suppliers/feeds', 'view') or auth.permissions('suppliers/feeds/products', 'view') %}
+			<li id="suppliers">
+				<a class="parent">
+					<i class="fa fa-share-alt fa-fw"></i>
+					<span>{{ language.translate('suppliers') }}</span>
+				</a>
+				<ul class="collapse">
+					{% if auth.permissions('suppliers', 'view') %}
+						<li><a href="#">{{ language.translate('suppliers') }}</a></li>
+					{% endif %}
+					{% if auth.permissions('suppliers/feeds', 'view') %}
+						<li><a href="#">{{ language.translate('feeds') }}</a></li>
+					{% endif %}
+					{% if auth.permissions('suppliers/feeds/products', 'view') %}
+						<li><a href="#">{{ language.translate('productsFromFeeds') }}</a></li>
+					{% endif %}
+				</ul>
+			</li>
+		{% endif %}
+		{% if auth.permissions('system/unitsOfMeasurement', 'view') or auth.permissions('system/aliases', 'view') or auth.permissions('system/errors', 'view') %}
+			<li id="system">
+				<a class="parent">
+					<i class="fa fa-cog fa-fw"></i>
+					<span>{{ language.translate('system') }}</span>
+				</a>
+				<ul class="collapse">
+					{% if auth.permissions('system/unitsOfMeasurement', 'view') %}
+						<li><a href="{{ path_for('system.unitsOfMeasurement')}}">{{ language.translate('unitsOfMeasurement') }}</a></li>
+					{% endif %}
+						{% if auth.permissions('system/aliases', 'view') %}
+					<li><a href="#">{{ language.translate('aliases') }}</a></li>
+					{% endif %}
+					{% if auth.permissions('system/errors', 'view') %}
+						<li><a href="#">{{ language.translate('errors') }}</a></li>
+					{% endif %}
+				</ul>
+			</li>
+		{% endif %}
 	</ul>
 </nav>

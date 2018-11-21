@@ -51,6 +51,24 @@ html, body {
 	border-right: 1px solid #E1E1E1;
 }
 
+#header #rightNav #persistent-items-new .dropdown-menu,
+#header #rightNav #persistent-items-edit .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+
+#header #rightNav #persistent-items-new .dropdown-menu .dropdown-item,
+#header #rightNav #persistent-items-edit .dropdown-menu .dropdown-item {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+#header #rightNav #persistent-items-new .dropdown-menu .dropdown-item a.persistent-item,
+#header #rightNav #persistent-items-edit .dropdown-menu .dropdown-item a.persistent-item {
+	flex-grow: 1;
+}
+
 #header #userDropdown {
 	left: auto;
 	right: 0;
@@ -259,6 +277,10 @@ html, body {
 
 .displayErrors {
 	color: #a94442;
+}
+
+.prtsistentDataIcon {
+	margin-bottom: 0;
 }
 
 @media (min-width: 768px) {

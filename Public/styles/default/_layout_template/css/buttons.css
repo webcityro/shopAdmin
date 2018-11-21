@@ -1,0 +1,43 @@
+.button {
+	padding: 5px 10px;
+	font: 20px bold;
+	color: #666;
+	/*border-radius: 14px;
+	box-shadow: inset rgba(57, 144, 247, 1) 0px 0px 15px;*/
+	border: 2px solid #666;
+	outline: none;
+	background:#EBF2F9;
+}
+
+.button.buttonSmall {
+	padding: 3px 5px;
+	font: 18px bold;
+	/*border-radius: 10px;
+	box-shadow: inset rgba(57, 144, 247, 1) 0px 0px 8px;*/
+}
+
+.button.buttonMediu {
+	padding: 10px 20px;
+	font: 25px bold;
+	/*border-radius: 25px;
+	box-shadow: inset rgba(57, 144, 247, 1) 0px 0px 20px;*/
+}
+
+.button.buttonBig {
+	padding: 15px 25px;
+	font: 30px bold;
+	/*border-radius: 30px;
+	box-shadow: inset rgba(57, 144, 247, 1) 0px 0px 108px;*/
+}
+
+.button.buttonLarge {
+	padding: 20px 35px;
+	font: 35px bold;
+	/*border-radius: 45px;
+	box-shadow: inset rgba(57, 144, 247, 1) 0px 0px 40px;*/
+}
+
+.button:hover {
+	cursor: pointer;
+	/*box-shadow: inset rgba(57, 144, 247, .5) 0 0 40px !important;*/
+}

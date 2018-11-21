@@ -47,26 +47,19 @@ $language['clickHere'] = 'click aici';
 $language['level'] = 'Nivel';
 $language['minLevel'] = 'Nivel minim';
 $language['min'] = 'Minim';
+$language['new'] = 'Nou';
 
 $language['sexm'] = 'Masculin';
 $language['sexf'] = 'Feminin';
 $language['t&cp'] = 'Termenii si conditile';
 $language['t&c'] = 'Termene si conditii';
 
-$language['second'] = 'secunda';
-$language['minute'] = 'minut';
-$language['hour'] = 'ora';
-$language['day'] = 'zi';
-$language['month'] = 'luna';
-$language['year'] = 'an';
-$language['seconds'] = 'secunde';
-$language['minutes'] = 'minute';
-$language['hours'] = 'ore';
-$language['days'] = 'zile';
-$language['months'] = 'luni';
-$language['years'] = 'ani';
-
-$language['agoTime'] = 'Acum {s1} {s2}';
+$language['size'] = 'Marime';
+$language['digitalSize'] = 'Marime digitala';
+$language['weight'] = 'Greutate';
+$language['temperature'] = 'Temperatura';
+$language['electric'] = 'Electric';
+$language['fluids'] = 'Fluide';
 
 $language['month01'] = 'Ianuarie';
 $language['month02'] = 'Februarie';
@@ -106,10 +99,12 @@ $language['addedPrice'] = 'Adauos preturi';
 $language['suppliers'] = 'Furnizori';
 $language['feeds'] = 'Feed-uri';
 $language['system'] = 'Sistem';
+$language['unitsOfMeasurement'] = 'Unitati de masura';
 $language['aliases'] = 'Alias-uri';
 $language['errors'] = 'Errori';
 
 $language['formLabelFName'] = 'Nume';
+$language['formLabelTheName'] = 'Numele';
 $language['formLabelLName'] = 'Prenume';
 $language['formLabelUser'] = 'Utilizator';
 $language['formLabelUserName'] = 'Nume de utilizator';
@@ -146,30 +141,14 @@ $language['userAccessDenied'] = 'Nu ai drept de acces in aceasta sectiune!';
 $language['dontHavePermissionForAction'] = 'Nu ai drepturile necesare pentru a executa aceasta actiune!';
 $language['userDizctivated'] = 'Contul tau a fost dezactivat!';
 
+$language['persistentDataUpdateError'] = 'Nu s-au putut aptualiza datele persistente!';
+$language['persistentDataDeleteError'] = 'Nu s-au putut sterge datele persistente!';
+$language['deletePersistentDataPharagraf'] = 'Esti sigur ca vrei sa stergi articolul persistent "{s1}"?';
+$language['deletePersistentDataAndArticlePharagraf'] = 'Stergere articolul persistent "{s1}"';
+$language['deletePersistentDataAndArticle'] = 'Sterge modificarile si articolul original';
+$language['deletePersistentData'] = 'Sterge doar modificarile';
+
 $language['formLabelRememberMe'] = 'Tine-ma minte';
 $language['formLoginBtn'] = 'Logheaza-te!';
 $language['formLoginNewAccount'] = 'Cont nou';
 $language['formLoginForgetPassword'] = 'Ti-ai uitat parola?';
-
-
-$language['validateRequired'] = '{s1} este obligatoriu!';
-$language['validateMinLength'] = '{s1} trebuie sa contina minim {s2} caractere!';
-$language['validateMaxLength'] = '{s1} trebuie sa contina maxim {s2} caractere!';
-$language['validateLengthRange'] = '{s1} trebuie sa contina intre {s2} si {s3} caractere!';
-$language['validateLength'] = '{s1} trebuie sa contina {s2} caractere!';
-$language['validateAlpha'] = '{s1} trebuie sa contina doar litere de la A la Z!';
-$language['validateNumeric'] = '{s1} trebuie sa contina doar numere de la 0 la 9!';
-$language['validateAlNum'] = '{s1} trebuie sa contina doar litere de la A la Z si numere de la 0 la 9!';
-$language['validateAlNumCustom'] = '{s1} trebuie sa contina doar litere de la A la Z numere de la 0 la 9 si urmatoarele caractere ({s2})!';
-$language['validateValidFormat'] = '{s1} nu este valid(a)!';
-$language['validateUniq'] = '{s1} este deja folosit(a)!';
-$language['validateMaches2'] = '{s1} nu coincide cu {s2}!';
-$language['validateNotMaches2'] = '{s1} nu trebuie sa coincida cu {s2}!';
-$language['validateMaches'] = '{s1} nu coincid!';
-$language['validateNotMaches'] = '{s1} nu trebuie sa coincia!';
-$language['validateAllFieldsRequired'] = 'Toate campurile sunt obligatorii!';
-$language['validateFieldsRequired'] = 'Campurile marcate cu (*) sunt obligatorii!';
-$language['validateunderAge'] = 'Trebuie sa ai {s1} ani inpliniti!';
-$language['validateNotAgree'] = 'Nu ai acceptat termenele si conditile impuse de noi!';
-$language['validateEmailAvailable'] = 'Adresa de email exista deja.';
-$language['validateUserNameAvailable'] = 'Numele de utilizator exista deja.';

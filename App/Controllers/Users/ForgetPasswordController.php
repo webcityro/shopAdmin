@@ -11,7 +11,7 @@ class ForgetPasswordController extends Controller {
 	private $tokenLiveTime = 30; // minutes
 
 	function construct() {
-		$this->language->load('ForgetPassword');
+		$this->language->load('Users/ForgetPassword');
 	}
 
 	public function index($request, $response) {
